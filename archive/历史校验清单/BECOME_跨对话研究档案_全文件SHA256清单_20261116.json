@@ -1,0 +1,877 @@
+{
+  "version": "R04-B",
+  "master_md": "BECOME_第四第五幕灾害与太阳系演化_研究计算总执行方案_v1_26111501.md",
+  "files": [
+    {
+      "name": "BECOME_R02A_新增问题复核_主效应与多体修正对照_v1_26111523.csv",
+      "bytes": 10526,
+      "sha256": "0eb0932ebad069ab722c3dcf5a7ca603c6cf6bd25b5b23764bd31baa03a27f8e"
+    },
+    {
+      "name": "BECOME_R02B_外围行星相位48情景_九体两体偏离_逐年_v1_261115.csv",
+      "bytes": 288320,
+      "sha256": "7d3a99ca59f051cd9dfb33c87bcdbbbed0c74abcee137b5727ab5cde39a0ff26"
+    },
+    {
+      "name": "BECOME_R02B_外围行星相位48情景_实际运行与收敛_v1_261115.txt",
+      "bytes": 4660,
+      "sha256": "3ef10d4e3e81e5435875a195ddcff11a2fdb23e2270d307d1a54b233aef21489"
+    },
+    {
+      "name": "BECOME_R02B_外围行星相位48情景_能量过零时间区间_v1_261115.csv",
+      "bytes": 59530,
+      "sha256": "5b7cc2cda5ca06d968ffb79d64f1f40a3c9cba6fb9d3ce17bb626132c0dde84f"
+    },
+    {
+      "name": "BECOME_R02B_外围行星相位覆盖扫描_复算程序_v1_261115.py",
+      "bytes": 11387,
+      "sha256": "6e6fc2bb63b9614b3c4ff0d9df4762986e29cadbc84ed574f99763b97e66f9a1"
+    },
+    {
+      "name": "BECOME_R02B_能量过零内插误差_高精度根验证_v1_261115.csv",
+      "bytes": 6410,
+      "sha256": "e03f94b10945c6410c3b3cbcc409cca180e2d8e32853de0e38da908ed8bdc1eb"
+    },
+    {
+      "name": "BECOME_R02B_能量过零插值误差验证_程序_v1_261115.py",
+      "bytes": 3758,
+      "sha256": "abafcf7f9214823d159d89a306feabf958e8b81959078a65f6b107bd7fbca09d"
+    },
+    {
+      "name": "BECOME_R02B_轨道研究_写作调用结论表_v1_261115.csv",
+      "bytes": 2877,
+      "sha256": "ed436fd7b6b1d6069d35caee6fa566ae975cb22367aae2e658be9b65495ab15d"
+    },
+    {
+      "name": "BECOME_R02C1_不同初态的能量过零精确求根_v1_261116.csv",
+      "bytes": 1272,
+      "sha256": "625784885ec8b0fcaae9e3c392f9529cc1cf4545dede6ec47341a04e316191f3"
+    },
+    {
+      "name": "BECOME_R02C1_写作调用新增结论表_v1_261116.csv",
+      "bytes": 1180,
+      "sha256": "d2bcac8338583eb6cba57e1edaef95125d78d8e65a2712de58d0d64899534244"
+    },
+    {
+      "name": "BECOME_R02C1_新旧历表初态差异_v1_261116.csv",
+      "bytes": 2082,
+      "sha256": "d894becccd771e6bd4e3b50ec675f813003bd7b3ad98a1670bbc6efb45290103"
+    },
+    {
+      "name": "BECOME_R02C1_独立历表_H0六维初态表_v1_261116.csv",
+      "bytes": 1934,
+      "sha256": "bf300224c683b172d1a8e3b8d729263bee2152961e9641c254c9c85b65ed0c0e"
+    },
+    {
+      "name": "BECOME_R02C1_独立历表六维初态对照与九体重积分_可复算程序_v1_261116.py",
+      "bytes": 13569,
+      "sha256": "fee645fab90f9a1f0997b0438d6e1e71a61dcb9a3f4a8ae9532210e8351c3b02"
+    },
+    {
+      "name": "BECOME_R02C1_独立历表重积分_算法与验算记录_v1_261116.txt",
+      "bytes": 3670,
+      "sha256": "05db7eeb4b9a013ace70b107f8e0db406e82a3be326412cc0e92694312aa511f"
+    },
+    {
+      "name": "BECOME_R02C1_独立历表重积分_逐季轨道偏差_v1_261116.csv",
+      "bytes": 22747,
+      "sha256": "5f4b5f7cd07757832f5669ca8bf2d04fe73b87ac45163fb925b4ed2bc7e543db"
+    },
+    {
+      "name": "BECOME_R02C2_地月十体_积分收敛检验_v1_261116.csv",
+      "bytes": 2139,
+      "sha256": "b75e5b8f4a5df867823cd78b0de320531e39ca980bca8af4b8723a3910d96f18"
+    },
+    {
+      "name": "BECOME_R02C2_地月十体_逐日轨道潮汐与束缚数据_v1_261116.csv",
+      "bytes": 550289,
+      "sha256": "af78b27cdce3217e08540a594d7ed36361643a0f8c1ad12a377e74cae76f50c3"
+    },
+    {
+      "name": "BECOME_R02C2_地月十体演化_完整可复算积分_v1_261116.py",
+      "bytes": 18192,
+      "sha256": "afef13b91709d274b54033c4eea94966177188d6c5097efe7f8edcc97dcfcce2"
+    },
+    {
+      "name": "BECOME_R02C2_地月系统_30日平均量与月相干扰_v1_261116.csv",
+      "bytes": 13622,
+      "sha256": "f68904d7072c3504495fbb1ccf2e88e422d67f3bb37c86983072a45ed308c87b"
+    },
+    {
+      "name": "BECOME_R02C2_地月系统_小说调用结论表_v1_261116.csv",
+      "bytes": 2041,
+      "sha256": "7ccb24ceb015b22f6f72120128fd3c9880cf16eaef2464acd8d72a56e6fc90dd"
+    },
+    {
+      "name": "BECOME_R02C2_地月系统_逐季节点量_v1_261116.csv",
+      "bytes": 5596,
+      "sha256": "3c4c4be7aa020059ae385ec2e063562276aae25cf32fa1a6681514a6d8e85431"
+    },
+    {
+      "name": "BECOME_R02C2_月球12初始相位敏感性_逐情景结果_v1_261116.csv",
+      "bytes": 2610,
+      "sha256": "97f2e2feacaf6488bc26d8b9f781526dfd2fab1d7932b5378c9efc0db987b48c"
+    },
+    {
+      "name": "BECOME_R02C2_月球12真实相位偏移_地月三体结果_v1_261116.csv",
+      "bytes": 2020,
+      "sha256": "9a85f2ce2d6405345be1e40403fc182b62e6dd6e92dc3f192640015563a12882"
+    },
+    {
+      "name": "BECOME_R02C2_月球天球方向变化_恒光太阳对照_v1_261116.csv",
+      "bytes": 13504,
+      "sha256": "b5ba5cad4027ec4a9af27cf10e24e51a912501b3ae46bc365251b34ac9b1e6af"
+    },
+    {
+      "name": "BECOME_R02C2_纯地月二体守恒检验_v1_261116.csv",
+      "bytes": 3657,
+      "sha256": "eb129e726801654a8960dcd0303395eb9b15ae3d8df78e4d98ac8c216b5c0323"
+    },
+    {
+      "name": "BECOME_R02C2_跨尺度灾害社会反馈_影响登记表_v1_261116.csv",
+      "bytes": 4037,
+      "sha256": "5ddc62383c2f1629bf3d21420f2ce094d68a9592a55a2448c6026b5201081d1f"
+    },
+    {
+      "name": "BECOME_R02C3_与R02C2逐日数据回归校验_v1_261116.csv",
+      "bytes": 383,
+      "sha256": "500ebda975917126fd477cab120d6445c0af5abd26dd3f6a72a11164a6a085bf"
+    },
+    {
+      "name": "BECOME_R02C3_写作调用核验结论表_v1_261116.csv",
+      "bytes": 2328,
+      "sha256": "790dbbe8677e5c5dd7d488b258d184c9131177ab0e03fe14be0a54be8a08df5c"
+    },
+    {
+      "name": "BECOME_R02C3_地月六年延拓与太阳末段三情景_可复算程序_v1_261116.py",
+      "bytes": 15471,
+      "sha256": "0af35ebeb8c8649c421efaf976d3098163e01760e09462a1421b71fe036fa9fe"
+    },
+    {
+      "name": "BECOME_R02C3_地月六年末段三情景_关键节点_v1_261116.csv",
+      "bytes": 16177,
+      "sha256": "3d3c8a038024f998393d8e2efcbe3a2a7835d50f536fac36508fb1b30c2ef50b"
+    },
+    {
+      "name": "BECOME_R02C3_地月六年末段三情景_逐日状态_v1_261116.csv",
+      "bytes": 3083575,
+      "sha256": "2f820d6b0d698a654763065175dc39e3ce72d202fced0deedfd9a29fc20caafe"
+    },
+    {
+      "name": "BECOME_R02C3_地月长期周期项与近遇_分年统计_v1_261116.csv",
+      "bytes": 2245,
+      "sha256": "d5868ba22b920464e5767b99fee68af3118cac0291ffbeabeef4b36f0fd915f5"
+    },
+    {
+      "name": "BECOME_R02C3_地球日心半径跨阈时间_非撞击判据_v1_261116.csv",
+      "bytes": 2104,
+      "sha256": "8748107a3f176f1865139e45cdfbf501562e3405ea1c1fb7fe20932cc775d7cc"
+    },
+    {
+      "name": "BECOME_R02C3_太阳对月球引潮势贡献_节点对照_v1_261116.csv",
+      "bytes": 4503,
+      "sha256": "e4259120e3f3d53a46623be776339a26017cea38a226c82ebeb66e3d7ecaee08"
+    },
+    {
+      "name": "BECOME_R02C3_实验事实与误差日志_v1_261116.json",
+      "bytes": 8759,
+      "sha256": "215e9f942747e9306964b2b1d50bcf7ca81f1b37e76d681b3d884e3f5184e6d4"
+    },
+    {
+      "name": "BECOME_R02C3_延长积分收敛与守恒_v1_261116.csv",
+      "bytes": 178,
+      "sha256": "1ebb0725bce6a1f05312c65ec4de65379c8af2cb043275be9a45b571ceaee94d"
+    },
+    {
+      "name": "BECOME_R02C3_月球轨道面进动_六年后期对照_v1_261116.csv",
+      "bytes": 921,
+      "sha256": "4eba15d3f3fa536a76be72991122880f998c3039d2b6d7236fc1375107a45f19"
+    },
+    {
+      "name": "BECOME_R02C3_月球近地点与交点轨道变化_逐日数据_v1_261116.csv",
+      "bytes": 450503,
+      "sha256": "dd1faf0cb84537ac708e8a770be11eb91b60ebdda7991a51807c9b7a34809a6c"
+    },
+    {
+      "name": "BECOME_R02C3_跨尺度影响灾害与社会反馈登记表_v1_261116.csv",
+      "bytes": 2769,
+      "sha256": "10856653013de22e5729bf387b4d5f0ad7fd772da4ebe640534e25738c2b2258"
+    },
+    {
+      "name": "BECOME_R03A_主带试验粒子与十体引力_可复算程序_v1_261116.py",
+      "bytes": 16535,
+      "sha256": "ecf9351f698e80bc7a170e41e26452882e230ad2cc7c35408225eecd38d6a3ff"
+    },
+    {
+      "name": "BECOME_R03A_写作引用层_结论登记_v1_261116.csv",
+      "bytes": 1170,
+      "sha256": "8125997158084aa0e1c46a678a3b7fff43924357e98fbbadf97de15084d2df42"
+    },
+    {
+      "name": "BECOME_R03A_小行星_近地交会候选与校验_v1_261116.csv",
+      "bytes": 7110,
+      "sha256": "7aeb85b4cbb25e1ce3cee622aeb6762a20c4195bd263c0ae553fe66285788bdd"
+    },
+    {
+      "name": "BECOME_R03A_小行星主带三年_半年统计_v1_261116.csv",
+      "bytes": 2815,
+      "sha256": "1557504015a26bb9a4d91b21f0cbbd72ae4087e5ba0136c832726e0176d09575"
+    },
+    {
+      "name": "BECOME_R03A_小行星测试粒子_初始轨道与最终演化_v1_261116.csv",
+      "bytes": 523375,
+      "sha256": "ad9f218e760666345e22bc11b645f61680f994ddc4ff7169820a46476ab39368"
+    },
+    {
+      "name": "BECOME_R03A_小行星积分_数值收敛与运行记录_v1_261116.json",
+      "bytes": 5341,
+      "sha256": "712dd865e2ec367ba2ae78865102d401a0e9fcb7be552ba6f9eeb913e4846c4f"
+    },
+    {
+      "name": "BECOME_R03A_跨尺度影响与问题复核_v1_261116.csv",
+      "bytes": 3297,
+      "sha256": "d4405801667980d991d614fd8b6e83360bda4d943067ade9847232a72256a129"
+    },
+    {
+      "name": "BECOME_R03B1_DOP853_误差分类与检验_v1_261116.json",
+      "bytes": 28068,
+      "sha256": "01445493a99290fa257a2c097e797e96c0e3e4df487cf611a3f64da54ecf5dd2"
+    },
+    {
+      "name": "BECOME_R03B1_DOP853全部10样本的真实三维近遇复核_v1_261116.csv",
+      "bytes": 2219,
+      "sha256": "3cf62cbae41c0d61078dcbdeae9202e8330dccc45611a9ed7635a7ba951908e9"
+    },
+    {
+      "name": "BECOME_R03B1_写作调用_经DOP853复核_v2_261116.csv",
+      "bytes": 793,
+      "sha256": "8ba3255084dfc53633b6b451efdb1b9aadda827af808ff395014ace99eef3eeb"
+    },
+    {
+      "name": "BECOME_R03B1_小说引用结果表_v1_261116.csv",
+      "bytes": 667,
+      "sha256": "ec2e8bcf1dd742b3ded1c7ba657006aa2efd7a598f7dd857c15bf29d28ec37b6"
+    },
+    {
+      "name": "BECOME_R03B1_数值步长与历元敏感性_v1_261116.csv",
+      "bytes": 2319,
+      "sha256": "f7386fd18e4f53b55fb747f9366e4e335422229d01db1f2df51935491fa9c6c8"
+    },
+    {
+      "name": "BECOME_R03B1_新影响链与问题树审计_v1_261116.csv",
+      "bytes": 1930,
+      "sha256": "fd36248bca9c485d4f99dce3bd35143970ef316b23c80ad3d01cb18c9d1149ae"
+    },
+    {
+      "name": "BECOME_R03B1_新影响链与问题树审计_v2_261116.csv",
+      "bytes": 2454,
+      "sha256": "d1bdef6c785c837443f748d2563e6da35ec067c563e6724eb28a97be9ab6b87e"
+    },
+    {
+      "name": "BECOME_R03B1_真实天体六要素与来源追溯_v1_261116.csv",
+      "bytes": 2713,
+      "sha256": "d5ca27aadc11b16b1f50ebcaa468e65d58e89c64b94767832ee8b269f7c6384b"
+    },
+    {
+      "name": "BECOME_R03B1_真实小天体轨道种子与十体交会_可复算程序_v1_261116.py",
+      "bytes": 14913,
+      "sha256": "cca927c6b78f6d3361eaf15949b31bb902e46fdac5a4730f48eddcd9980532a3"
+    },
+    {
+      "name": "BECOME_R03B1_真实样本三年交会及轨道演化_v1_261116.csv",
+      "bytes": 4832,
+      "sha256": "03e3cb1ab31fd7aba667f9ab1a3168d3e669a382b56c6f10d3e6987c1d531a4c"
+    },
+    {
+      "name": "BECOME_R03B1_近遇误差DOP853独立交叉验证_v1_261116.py",
+      "bytes": 5461,
+      "sha256": "2f5cbb66ed6071354e7a99526a0bfe76f0d6005c53913dd0a03c6f4cf4862cb1"
+    },
+    {
+      "name": "BECOME_R03B2A_写作调用结果_验证等级_v1_261116.csv",
+      "bytes": 953,
+      "sha256": "2119249bd277bdba0dcbee09ff6607a7fda96ec043f8aebb4c6ad18e843d343a"
+    },
+    {
+      "name": "BECOME_R03B2A_十二体小天体质量摄动_近遇差异_v1_261116.csv",
+      "bytes": 3413,
+      "sha256": "fc7447e5ccfe25774095ab7c2e8939637a89248746a7a80504ba1e2cbe2f83dd"
+    },
+    {
+      "name": "BECOME_R03B2A_十二体背景收敛与能量控制_v1_261116.csv",
+      "bytes": 939,
+      "sha256": "e8d9cd81589c98e97b30c84876e6473c311184c90465c2cd745d7f9968ef1caf"
+    },
+    {
+      "name": "BECOME_R03B2A_十二体近遇精细积分复核_v1_261116.csv",
+      "bytes": 661,
+      "sha256": "693839141dc392143a754b299feb9475f4b9f787efba99f93401d408d6edfab2"
+    },
+    {
+      "name": "BECOME_R03B2A_双大型小行星有质量摄动_独立复算_v1_261116.py",
+      "bytes": 9020,
+      "sha256": "9b0f54ce032b8643b544a3ca54de7ea8b006ce49e8563b8d766c9e4a07b26344"
+    },
+    {
+      "name": "BECOME_R03B2A_研究问题树复核与验收门槛_v1_261116.csv",
+      "bytes": 2103,
+      "sha256": "623be230f5035c1fcc798a8f5b8b6579c261e01fd6d8d9511ee29a3b0cac4165"
+    },
+    {
+      "name": "BECOME_R03B2B_MPCORB官方格式_测试回执_v1_261116.csv",
+      "bytes": 2700,
+      "sha256": "7aba244ebc46e3ffa03bf8c49ee739ec0aecd93b588986cb349a109c88172b30"
+    },
+    {
+      "name": "BECOME_R03B2B_MPCORB官方目录流式解析与单元验证_v1_261116.py",
+      "bytes": 6791,
+      "sha256": "d79f476307a17c34bb4eee3fcd71c5b0cb91f455ff21511c297ac76c7f486006"
+    },
+    {
+      "name": "BECOME_R03B2B_候选DOP853连续近遇验证_v1_261116.csv",
+      "bytes": 3149,
+      "sha256": "e3b854aa4830047920714fbe0333bbdb1f090568f21a8eedcfd857e4af80d316"
+    },
+    {
+      "name": "BECOME_R03B2B_全部1536条轨迹_半日与四分之一日步长核验_v1_261116.csv",
+      "bytes": 177941,
+      "sha256": "242d3a7724e610a07a258d74cece233efb62986fd184ed4d569952e2042f5c19"
+    },
+    {
+      "name": "BECOME_R03B2B_写作调用分级结论_v1_261116.csv",
+      "bytes": 732,
+      "sha256": "abd94ec36c0716c0d2da5155a75564e6f510f1a05491dd264ae4eaacf421958f"
+    },
+    {
+      "name": "BECOME_R03B2B_相位集合初始轨道_768例_v1_261116.csv",
+      "bytes": 136653,
+      "sha256": "7d828fd3d9c91c2996afc978bf4cf3048763da36e6866f22c4fc2b1a5edd48a8"
+    },
+    {
+      "name": "BECOME_R03B2B_相位集合太阳减质与恒质量_近遇逐样本_v1_261116.csv",
+      "bytes": 141773,
+      "sha256": "78b31e21db7736f0a81230175c08cf4c0525afeb7521d9a3d47aabea64c09962"
+    },
+    {
+      "name": "BECOME_R03B2B_相位集合近遇阈值分组对照_v1_261116.csv",
+      "bytes": 1844,
+      "sha256": "a5c65d14d4e662f357880979761c333e6df1e0bd8ee22b76e69bc9d29a83fd43"
+    },
+    {
+      "name": "BECOME_R03B2B_轨道形状相位集合与地球近遇_可复算程序_v1_261116.py",
+      "bytes": 14831,
+      "sha256": "5d87f936c592b10468c3a616a11e4dbb23e28723bc676e950ee067a5255c2bb7"
+    },
+    {
+      "name": "BECOME_R03B2B_问题树及跨尺度影响审计_v1_261116.csv",
+      "bytes": 1509,
+      "sha256": "c3f640b9458987a28dc5b955d1b5c6fa1ff36edc752d5202f79b64f8e4506b5c"
+    },
+    {
+      "name": "BECOME_R03C_MPC潜在危险小行星32条_官方目录转录初态_v1.csv",
+      "bytes": 6096,
+      "sha256": "d3b369d79b8613dafb2e69226a865af778612a6bb2e0d026a6148c7b2d0d34c8"
+    },
+    {
+      "name": "BECOME_R03C_PHA32_三年十二体动力学最小地距及复算_v1.csv",
+      "bytes": 9823,
+      "sha256": "1dfaa2ed8199e2c04950796bc4428a3577f33e6dce847961dd864a635a2c4795"
+    },
+    {
+      "name": "BECOME_R03C_PHA32_背景行星收敛误差_v1.csv",
+      "bytes": 330,
+      "sha256": "470780404ecebbfbde1f4815d276ee72f4d6a4cb149ce94f599fe045205f7691"
+    },
+    {
+      "name": "BECOME_R03C_PHA32_连续解收敛精度逐体记录_v1.csv",
+      "bytes": 6994,
+      "sha256": "22890a94ff2267b13996c6b8b00eaa88eab50db81f266eefec080c866bc2ceb7"
+    },
+    {
+      "name": "BECOME_R03C_PHA实测轨道_十二体近遇执行_v1.py",
+      "bytes": 12114,
+      "sha256": "d2d67663eef2330c1a1faed30bfc0abdd87dd1051b525b29644f525d6d3b8574"
+    },
+    {
+      "name": "BECOME_R03C_交付档一致性验算_v1.json",
+      "bytes": 847,
+      "sha256": "3afd0baf5bda7b1ab55f0ca2b0282aeb8c630b964fc9b8bad42ac9a3ce249a01"
+    },
+    {
+      "name": "BECOME_R03C_公开历表外部独立验算_v1.csv",
+      "bytes": 918,
+      "sha256": "b30c2a5fbd7ace799692f7d31562e134ef166767a361ade723ff5f447b165001"
+    },
+    {
+      "name": "BECOME_R03C_小说调用结果分级_v1.csv",
+      "bytes": 865,
+      "sha256": "bd5b6bc25b673ab1a742ff94886c98ac1e6f9406c8a8d5f4730efc436264f023"
+    },
+    {
+      "name": "BECOME_R03C_新问题及社会反馈审计_v1.csv",
+      "bytes": 1483,
+      "sha256": "dee1519d136068d51004a018c2ef7f68857bbffb57d7167c4684af11318d205f"
+    },
+    {
+      "name": "BECOME_R03D_PHA68_修订六要素与内部交叉校验_v1_261116.csv",
+      "bytes": 14461,
+      "sha256": "44ffed2901d028ad009bc8f1c2f096ea4a348c32e4b449c0caec6ab01b47220d"
+    },
+    {
+      "name": "BECOME_R03D_PHA68_双情景分组复算_v1_261116.py",
+      "bytes": 7365,
+      "sha256": "52f8dc585950dcac47872ed5967b151cd6dfe0842e839ed33597f66aa9cfec7a"
+    },
+    {
+      "name": "BECOME_R03D_PHA68_双情景连续近遇结果_v1_261116.csv",
+      "bytes": 26454,
+      "sha256": "1581ba7e0b6f172712e8e98bde15884950edea1b23e2a9a9ecc59e3f15dc7da3"
+    },
+    {
+      "name": "BECOME_R03D_小说调用结论分级_v1_261116.csv",
+      "bytes": 1196,
+      "sha256": "ee9dca286885ca533542de28cb798ae9a4f5aaa0bb2b4edddb4314f07149b08f"
+    },
+    {
+      "name": "BECOME_R03D_旧32条与官方网页_输入字段差异_v1_261116.csv",
+      "bytes": 2377,
+      "sha256": "5f40edd019e49afeb618229b607d161f60cf050e5390364c068d1e6084832382"
+    },
+    {
+      "name": "BECOME_R03D_旧32颗输入修订造成的轨道差异_v1_261116.csv",
+      "bytes": 11155,
+      "sha256": "01eebf7c6fb0f88469297c7d8261f8e1bd7b675df064366837e637e0a8173675"
+    },
+    {
+      "name": "BECOME_R03D_第三例外部专业历表交叉验证_v1_261116.csv",
+      "bytes": 606,
+      "sha256": "c230f9d89016d2b755ed8dc38c55c95f15f9e0ceecf1e4827ddfad46e17410c4"
+    },
+    {
+      "name": "BECOME_R03D_问题本及影响反馈审核_v1_261116.csv",
+      "bytes": 2158,
+      "sha256": "3c48da59ac134e1e077feef9bd2805db0d231a55516f496ca69f4c346a9725e5"
+    },
+    {
+      "name": "BECOME_R03E_X1主带碎片注入条件参数扫描_v1_261116.py",
+      "bytes": 7155,
+      "sha256": "7c6fca0cd8fc41ae4ec40cb77ab4dea7008ed11af7ff6a830f7c2973b490604d"
+    },
+    {
+      "name": "BECOME_R03E_X1碎片冲量敏感性_148轨迹完整计算_v1_261116.csv",
+      "bytes": 26844,
+      "sha256": "fe1bfe80c4ef05b79d58f3765334f468ae9343de179bc127e360ba048796f263"
+    },
+    {
+      "name": "BECOME_R03E_小说调用分级结论_v1_261116.csv",
+      "bytes": 796,
+      "sha256": "b01544c6c8b4a3ff3de1c1777076fde794c4e4693a7462c970454c77326ae56a"
+    },
+    {
+      "name": "BECOME_R03E_问题覆盖及跨尺度传播审计_v1_261116.csv",
+      "bytes": 1739,
+      "sha256": "e816defdb6491a6ebbfa91150b9b9d05413c34164b2f3e92ba6d6a19bf848eda"
+    },
+    {
+      "name": "BECOME_R03F2_72问题组进度复核_v1_261116.csv",
+      "bytes": 4359,
+      "sha256": "01c29098605555c6210afdd664ad5a11fa53c8248f9f71c162c8763b72651cd3"
+    },
+    {
+      "name": "BECOME_R03F2_D0碎片全情景_地球近遇复算_v1_261116.csv",
+      "bytes": 58611,
+      "sha256": "a5f26fbecf132d43c2dc44b661cc8aa6997916031ba8c2e631eabd4913160b8a"
+    },
+    {
+      "name": "BECOME_R03F2_X1三维事件几何与D0碎片传播_可复算程序_v1_261116.py",
+      "bytes": 15435,
+      "sha256": "e1925695a35516e10375488559688f5b361fa6953e7a62f1fcdaa7fe9f228707"
+    },
+    {
+      "name": "BECOME_R03F2_X1近地实体几何回归_v1_261116.csv",
+      "bytes": 1046,
+      "sha256": "8be508314ea13d9eb7763cb2c9610e99c92e6b9b3870460f1c2ecb8d80d53498"
+    },
+    {
+      "name": "BECOME_R03F2_两档精度与分类回归_v1_261116.csv",
+      "bytes": 516,
+      "sha256": "0d07a77bcec6b4e119fc64575c763cd89b4ae61fca2fb9cc95774c902d68cb2a"
+    },
+    {
+      "name": "BECOME_R03F2_事件三维可满足性与构造母轨道_v1_261116.csv",
+      "bytes": 7369,
+      "sha256": "59d01c2a4c42110756a09a84a63e464435155c46cc78949bfa568daa20d40ccd"
+    },
+    {
+      "name": "BECOME_R03F2_小说写作调用结论与来源约束_v1_261116.csv",
+      "bytes": 1593,
+      "sha256": "3f04067547a56b441101c934ab582807f30da819a0ee574aa7c3864bbd2cc722"
+    },
+    {
+      "name": "BECOME_R03F2_新增问题与跨尺度传播审计_v1_261116.csv",
+      "bytes": 2823,
+      "sha256": "ccebc5645e92fc3624f453facfe453e96709bd12b62499f624b0018a827cd36b"
+    },
+    {
+      "name": "BECOME_R03F2_极近遇双算法_连续最近点检验_v1_261116.csv",
+      "bytes": 502,
+      "sha256": "88e9d7f782f0601a6cec0f39857bb5ec9a7a1033b879cac9bc5486056b97aab5"
+    },
+    {
+      "name": "BECOME_R03F2_碎片从D0至H0六维初始记录_v1_261116.csv",
+      "bytes": 38235,
+      "sha256": "a42ee1391bbfcecafcd16fd031209a2b37fdab2985cf0a3ff194e2185fe443ee"
+    },
+    {
+      "name": "BECOME_R03F2_碎片母体轨道与冲量扰动敏感性_v1_261116.csv",
+      "bytes": 21926,
+      "sha256": "2425a9dc42eec5983f9417b319fe4002d8321a1e7e6c7c62d367f10ec8648f35"
+    },
+    {
+      "name": "BECOME_R03F2_碎裂质量动能与抛射能量下界_v1_261116.csv",
+      "bytes": 5942,
+      "sha256": "5ce57f6c8f74e9118307451c554f48ecc07d032578791808bb2e3b908e60af4e"
+    },
+    {
+      "name": "BECOME_R03F2_第一幕物理事件原文抽取_来源表_v1_261116.csv",
+      "bytes": 1798,
+      "sha256": "45ad0f77e78126de634dde34623aaf156023028552bec2748e31f664dc5cf660"
+    },
+    {
+      "name": "BECOME_R03F2_追加归档验收清单_v1_261116.json",
+      "bytes": 3459,
+      "sha256": "c40137664d0d4dbd631a36544da5dbb27cda25183914ee15566bbfe789dc6aaa"
+    },
+    {
+      "name": "BECOME_R03F3_主带母体顺行轨道与碎片动力学_可复算程序_v1_261116.py",
+      "bytes": 8505,
+      "sha256": "bf769fc57f40086e36f58c5ff44c100829b2f265bfc3c05f8e21df49dbbcfa93"
+    },
+    {
+      "name": "BECOME_R03F3_小说调用经验证的结果与停用项_v1_261116.csv",
+      "bytes": 1905,
+      "sha256": "0de050d37d64b685ab6bbbce9a99f21bacc6787cb614c9f6c7b8fe3758b94a34"
+    },
+    {
+      "name": "BECOME_R03F3_本轮近遇分情景统计_v1_261116.csv",
+      "bytes": 402,
+      "sha256": "c44f5dfe8e453d829a21b5471216e2906c0ac1dcb18ef1699274ff86d24d5bad"
+    },
+    {
+      "name": "BECOME_R03F3_真实主带四天体源轨道与X1空间距离核验_v1_261116.csv",
+      "bytes": 2518,
+      "sha256": "b112d31e04690221fd362079012a49717fd490d5aa9575124fc373e6a2291043"
+    },
+    {
+      "name": "BECOME_R03F3_碎片逃逸与抛射能量模型约束_v1_261116.csv",
+      "bytes": 33445,
+      "sha256": "346a3746d05ce7cf976edf09cb0b13d60567d8647d9f5795068b019afdbd88d2"
+    },
+    {
+      "name": "BECOME_R03F3_近遇DOP853与Radau独立求解器对照_v1_261116.csv",
+      "bytes": 816,
+      "sha256": "e4078488d226ffdec45f40bdc07fbb8e1709a0d708bdf214ba00625520422b11"
+    },
+    {
+      "name": "BECOME_R03F3_问题本更正与跨尺度反馈审计_v1_261116.csv",
+      "bytes": 2260,
+      "sha256": "42cee3389577ea9556f5d7b08e3b2b0efe1a49dc5362a24287247734d6648484"
+    },
+    {
+      "name": "BECOME_R03F3_顺行碎片432轨迹双精度近遇结果_v1_261116.csv",
+      "bytes": 122517,
+      "sha256": "b573fada1594baa0a51911ca6c72278e2d7694a3d23841d31589e69a3838760a"
+    },
+    {
+      "name": "BECOME_R03F4_72问题组实算进度复核_v1_261116.csv",
+      "bytes": 4758,
+      "sha256": "40821b16cad59ac8ee792a0bbe17395e5a9b56c22faf95b7f746c058dc3e31e0"
+    },
+    {
+      "name": "BECOME_R03F4_八次碰撞_碎片质量速度能量分布_648组合_v1_261116.csv",
+      "bytes": 218352,
+      "sha256": "6479970c0ccc115ae27aac06d4be700f739b5f01ab599dfd96296be4fcb230e2"
+    },
+    {
+      "name": "BECOME_R03F4_写作调用结果及停用限制_v1_261116.csv",
+      "bytes": 1491,
+      "sha256": "728ae893b9efe8018c243ea525659367154739ceb7c8f61dde94963a59518ced"
+    },
+    {
+      "name": "BECOME_R03F4_太阳质量流失后的微粒辐射压比_324条_v1_261116.csv",
+      "bytes": 55776,
+      "sha256": "2dec82c94098c83eeb7254740fe31cdd18b2583f2cfe9a58977cb7edde96ab1b"
+    },
+    {
+      "name": "BECOME_R03F4_抛射球面方向采样_6至96方向结果_v1_261116.csv",
+      "bytes": 2254,
+      "sha256": "9188798650af27762d72e2c4fcdf5601b43a6b3ea1f0fe708c20362c7c2c1c7f"
+    },
+    {
+      "name": "BECOME_R03F4_新影响与旧问题复审_AUD72至82_v1_261116.csv",
+      "bytes": 3823,
+      "sha256": "994404b60393a243bed249a4d6a9c451e701c63029df068c072aee9bbd234bf0"
+    },
+    {
+      "name": "BECOME_R03F4_条件性碎片云几何光学厚度_36条_v1_261116.csv",
+      "bytes": 6824,
+      "sha256": "7d606a88caa9d2dee462c9ef05e9a5bf9ba59029e091bf44d2f4a534fdc226cc"
+    },
+    {
+      "name": "BECOME_R03F4_球面嵌套采样_6至768方向收敛对照_v1_261116.csv",
+      "bytes": 6655,
+      "sha256": "e18bf6a1fb3913015a4d4d5c32fac534c8542fcccd3f711fc94e3729d3075409"
+    },
+    {
+      "name": "BECOME_R03F4_球面近遇四条Radau独立验算_v1_261116.csv",
+      "bytes": 642,
+      "sha256": "1621d5ed868c69c610c5938c4bde250576ee96e66336af367792372fe48333c0"
+    },
+    {
+      "name": "BECOME_R03F4_碎片加权示踪轨迹_1728次双精度积分_v1_261116.csv",
+      "bytes": 97415,
+      "sha256": "ff30c1f7d1d5225819746e9880f438d7890777f6267b9152d9d0986c94e7d94e"
+    },
+    {
+      "name": "BECOME_R03F4_碎片质量速度分布与十体近遇_可复算程序_v1_261116.py",
+      "bytes": 13611,
+      "sha256": "8dd2a3e01734d6906d46104274513d77b3205648bb5c5b1b17edd9c1eea668ef"
+    },
+    {
+      "name": "BECOME_R03F4_粒径下限对质量与总几何截面的敏感性_v1_261116.csv",
+      "bytes": 5798,
+      "sha256": "27a5ad2b8a3b914f542caa97875521bbdaa7b761fb8cb5f10ff280e69d50f0d7"
+    },
+    {
+      "name": "BECOME_R03F_72问题组实算覆盖与完成度审计_v1_261116.csv",
+      "bytes": 3511,
+      "sha256": "13523cfe49ee09de76b97a92efd98fceb1b7b0ec2dd6d0584710416dbcc86074"
+    },
+    {
+      "name": "BECOME_R03F_D0至P0四十天运动学与能量校验_v1_261116.csv",
+      "bytes": 3979,
+      "sha256": "d44216096680a59c464a3a10ccf2a52aa4b593ad83eb35bb3557d14959581ae0"
+    },
+    {
+      "name": "BECOME_R03F_X1主带穿越_碰撞几何与碎片能量_可复算程序_v1_261116.py",
+      "bytes": 12253,
+      "sha256": "f5726baacac36a73831a728ae673da466872ea5949e278d3158aafda61000344"
+    },
+    {
+      "name": "BECOME_R03F_主带人口及X1投影碰撞_多参数7680情景_v1_261116.csv",
+      "bytes": 1300259,
+      "sha256": "98fb2493d53fe22d4d9d400e6d2275ae5c960490d0568491439fd3001f31dbaa"
+    },
+    {
+      "name": "BECOME_R03F_主带人口及X1投影碰撞_多参数7776情景_v1_261116.csv",
+      "bytes": 1300259,
+      "sha256": "98fb2493d53fe22d4d9d400e6d2275ae5c960490d0568491439fd3001f31dbaa"
+    },
+    {
+      "name": "BECOME_R03F_主带局部密度与多次撞击_泊松风险敏感性_v1_261116.csv",
+      "bytes": 1189,
+      "sha256": "2f1415d9d5e53c5565ab6ee52faf54bca9463dcf68cadd75019bc4418438b7e3"
+    },
+    {
+      "name": "BECOME_R03F_写作调用分级结果_v1_261116.csv",
+      "bytes": 1268,
+      "sha256": "1e8e9e514965728fd03aa8349c1174148a9f12a559871c08326fe8f8ebec8af6"
+    },
+    {
+      "name": "BECOME_R03F_小行星碰撞能量_尺寸密度速度交叉表_v1_261116.csv",
+      "bytes": 5559,
+      "sha256": "7937b80379d0847d7bd520457090f3117ca37d6984839604c9541ed5c8349427"
+    },
+    {
+      "name": "BECOME_R03F_投影截面独立蒙特卡罗验证_v1_261116.csv",
+      "bytes": 523,
+      "sha256": "30c13925b1e9f1375f1d699e3bf91ac6a6ce7728b4014051e87d5045f0dc9642"
+    },
+    {
+      "name": "BECOME_R03F_新增问题与影响传播闭环_v1_261116.csv",
+      "bytes": 1878,
+      "sha256": "3b2b37ad63e2c82e5d27a11d55d54106c20231f2c639555c26ec52ec59b80a3b"
+    },
+    {
+      "name": "BECOME_R03F_旧碎片冲量扫描_能量耦合条件_v1_261116.csv",
+      "bytes": 618,
+      "sha256": "0724f05799a3597e6bbfdd4dc0918ec38ff00d2cdd10c351679b14fae207a1c4"
+    },
+    {
+      "name": "BECOME_R04A_72问题组完成度复核_v1_261116.csv",
+      "bytes": 5513,
+      "sha256": "6444262e6e509cc5c85d638dcfb4c58f1923ef96f67a91f52d85d9f6c4effe6f"
+    },
+    {
+      "name": "BECOME_R04A_地球辐照_三光度假设逐日结果_v1_261116.csv",
+      "bytes": 678257,
+      "sha256": "3961e72296452c390eeeaa6905c3e00cd7c20ba46f9358b79986022a7b65ac59"
+    },
+    {
+      "name": "BECOME_R04A_地球逐日辐照与零维热惯性_可复算程序_v1_261116.py",
+      "bytes": 11828,
+      "sha256": "98086d39e25ca54af83ff46b222ba15dc317a99e496954ca8075f0be4026883f"
+    },
+    {
+      "name": "BECOME_R04A_地球零维热惯性_18情景逐月温度与功率_v1_261116.csv",
+      "bytes": 83694,
+      "sha256": "6d92d96af5ea695f70551818aafdf3e125628ded48d42939d6e9b9b24ab1999d"
+    },
+    {
+      "name": "BECOME_R04A_地球零维热惯性_18情景阈值与能量收支_v1_261116.csv",
+      "bytes": 4544,
+      "sha256": "9d883d5dfaf5d1c3212b369b44be4ffec62490e2680f47aa81c82181c7c2cb16"
+    },
+    {
+      "name": "BECOME_R04A_小说调用分级结论_v1_261116.csv",
+      "bytes": 1351,
+      "sha256": "4704f876596fba75e9f6f76953db9e2ef975f7c035ae934ae4b9dd6ec4a06773"
+    },
+    {
+      "name": "BECOME_R04A_新增问题_AUD83至93与社会反馈审计_v1_261116.csv",
+      "bytes": 2331,
+      "sha256": "0ac21fe741e9d67b1ab8f966683b2d3c63a65b8bc235391cfa17d7636463d9ea"
+    },
+    {
+      "name": "BECOME_R04A_海洋混合层与单米结冰潜热预算_v1_261116.csv",
+      "bytes": 827,
+      "sha256": "87284aafc9a619c74d762ad47a6cd508712531e1d81c2dcb1365735b1422b1ae"
+    },
+    {
+      "name": "BECOME_R04A_独立Radau交叉积分校验_v1_261116.csv",
+      "bytes": 662,
+      "sha256": "efb1278c8247f8204f86659c8ce840a795fa56a7a7ee0b7af55b2fcc7579ae0f"
+    },
+    {
+      "name": "BECOME_R04A_辐照阈值跨越_连续内插根_v1_261116.csv",
+      "bytes": 985,
+      "sha256": "84979fa3b817ff1cc85484c788bdc2b83a81d96b5363fd77c6c2c0817a9142e9"
+    },
+    {
+      "name": "BECOME_R04B_72问题组完成度复核_v1_261116.csv",
+      "bytes": 5878,
+      "sha256": "2698e694082833c9eb73dc59b29e33a4c8824aeaa14c7fb38572e168f2dc4a14"
+    },
+    {
+      "name": "BECOME_R04B_两半球与全球等效温度_节点结果_v1_261116.csv",
+      "bytes": 49852,
+      "sha256": "ecdb48ef2df91ec4514a3edb6ff674bd59a101e55258b30552f8c5b1adbc0a1b"
+    },
+    {
+      "name": "BECOME_R04B_供暖温差与陆地冻结_灾害输入边界_v1_261116.csv",
+      "bytes": 4811,
+      "sha256": "89701903f1a03a6c51fdb184aa017eeca7d4195f643de3d869c1b5385dfb49dc"
+    },
+    {
+      "name": "BECOME_R04B_地球日照轨迹_十体几何逐日原始数据_v1_261116.csv",
+      "bytes": 179510,
+      "sha256": "1ed7e1fa4456c17e91a80612d6123fff4a806605c1409012ec434c30ce75676b"
+    },
+    {
+      "name": "BECOME_R04B_地球纬向双地表_真实轨道日照与温度敏感性_复算程序_v1_261116.py",
+      "bytes": 14795,
+      "sha256": "d31f01c4c033d2479983a91da0f46d86c63759863a0c4f66842db70a1311cc35"
+    },
+    {
+      "name": "BECOME_R04B_守恒与独立求解器误差检验_v1_261116.csv",
+      "bytes": 2845,
+      "sha256": "9aad39dde313823e4691724d6c4d969ed1afe2e1e3fc9c1a7fea299ca3973628"
+    },
+    {
+      "name": "BECOME_R04B_小说直接调用_分级物理结论_v1_261116.csv",
+      "bytes": 1104,
+      "sha256": "6e6600933588a6cc53ac9b49947cb68276922e9ffa40c4d33c77380fccad6033"
+    },
+    {
+      "name": "BECOME_R04B_新增问题与灾害社会反馈_AUD94至105_v1_261116.csv",
+      "bytes": 2668,
+      "sha256": "f43e288d7db942dd42840e1d657b78ea9b8658981095a68af387cbb16909a5d2"
+    },
+    {
+      "name": "BECOME_R04B_日心距离历史数据回归检验_v1_261116.csv",
+      "bytes": 300,
+      "sha256": "275eadfe10a15e618844bb9f4e0a62c470e04c3c7a73e7e27faa017297909e9b"
+    },
+    {
+      "name": "BECOME_R04B_研究档案_第31节增补和完整性验收_v1_261116.json",
+      "bytes": 2307,
+      "sha256": "367f3ee88ebaa3698d95a3e04b3ded0083cb7fc8266946753260df3919a896cc"
+    },
+    {
+      "name": "BECOME_R04B_纬向陆海EBM_16情景时间纬度数据_v1_261116.csv",
+      "bytes": 12918272,
+      "sha256": "abaed0fc434ee056761f59abaad3dda79b34f7b89ec974e8ba134e322c6822d1"
+    },
+    {
+      "name": "BECOME_R04B_纬向陆海EBM_初值热容与辐射校准_v1_261116.csv",
+      "bytes": 9322,
+      "sha256": "a9c2bf6e76cbd6e638151141ff03de370154b1df63b6cd71d084de2227e97f39"
+    },
+    {
+      "name": "BECOME_R04B_纬向陆海_冰冻阈值与首次跨越时间_v1_261116.csv",
+      "bytes": 113342,
+      "sha256": "1835414a5783ddabbc8104e27507b19b42abc440c1b3417cf4639ef3b8e1d8b5"
+    },
+    {
+      "name": "BECOME_R04B_耦合影响与审计归档_可复算程序_v1_261116.py",
+      "bytes": 19623,
+      "sha256": "934e82d67806b1a9e4407404f7d2ece49b22ace3a653188ac62a6e59ef7a10bc"
+    },
+    {
+      "name": "BECOME_R04B_运行事实_来源与误差边界_v1_261116.json",
+      "bytes": 3418,
+      "sha256": "6427fb9b05503701f04e9efc97a5e5a21ee2c89ca2cd549fbb678a4d22bd4ce6"
+    },
+    {
+      "name": "BECOME_九体行星摄动_双基线偏离率_逐半月_v2_26111521.csv",
+      "bytes": 198162,
+      "sha256": "dfaf6ab4ddd74fc474ab1d8c1bcc16181bd7fb84b37ecfcedd75745a6f28e133"
+    },
+    {
+      "name": "BECOME_九体轨道_初始相位敏感性复核_v2_26111521.py",
+      "bytes": 2580,
+      "sha256": "cc196fe2451fc628233287d9dacaee0340c100e1b07ef942846a50171600a172"
+    },
+    {
+      "name": "BECOME_九体轨道_四初始相位敏感性_v2_26111521.csv",
+      "bytes": 13984,
+      "sha256": "f2f444d454d2fc62c2a67193b82c7dacb6a0ee5713ad15778ff6987bd16863d7"
+    },
+    {
+      "name": "BECOME_九体轨道_计算方法与数值检验_v2_26111521.txt",
+      "bytes": 10111,
+      "sha256": "ab775531f2b3138b7102bb9b6a48394205cac902e961255bfbb344682352953d"
+    },
+    {
+      "name": "BECOME_太阳系九体耦合_三方案可复算积分_v2_26111521.py",
+      "bytes": 14268,
+      "sha256": "913a630399401167e646e7323c600f22a84c06121dd8cb51bfa4b4a9bf4618c4"
+    },
+    {
+      "name": "BECOME_太阳系外围基线_两体积分_v1_26111520.py",
+      "bytes": 6252,
+      "sha256": "7cfbfa2812359b9df752ac8c37e132587f22fe9d0e2b57eb88aadd6442f7c2b1"
+    },
+    {
+      "name": "BECOME_太阳系外围基线_运行检验_v1_26111520.txt",
+      "bytes": 5698,
+      "sha256": "f04b04812ae88e0d08d7393cff25da8f6152db982825afc8090d241150b94a06"
+    },
+    {
+      "name": "BECOME_太阳系外围基线_逐季轨道输出_v1_26111520.csv",
+      "bytes": 35937,
+      "sha256": "e2d59f373edc048541c6b94cb1f35473e6f11eac841ab3c78eef86866d72f9f8"
+    },
+    {
+      "name": "BECOME_第四第五幕灾害与太阳系演化_研究计算总执行方案_v1_26111501.md",
+      "bytes": 301954,
+      "sha256": "1734f00f0e21c7801fa53f6c41e56f5547c27b17ac0600a5e828b08eed60674e"
+    },
+    {
+      "name": "BECOME_跨对话衔接提示词_截至R04B_20261116.md",
+      "bytes": 5715,
+      "sha256": "cb0d61d9e4c8a1e682a7ab22307e81a046554476a223a3cc9161d73c16e29e15"
+    }
+  ],
+  "file_count": 174
+}
