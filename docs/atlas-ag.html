@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>BECOME | A–G Interactive Data Atlas</title>
+<style>
+:root{color-scheme:dark;--bg:#10141c;--panel:#1a2130;--edge:#344050;--fg:#edf5fb;--sub:#a9bacc;--accent:#52d8ce;--focus:#facd80}*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);margin:0;font:15px/1.55 system-ui,"Noto Sans",sans-serif}
+main{max-width:1240px;margin:auto;padding:26px 24px 70px}
+a{color:var(--accent)} header{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--edge)}
+h1{font-size:clamp(25px,4.8vw,46px);margin:4px 0 6px;line-height:1.2}h2{font-size:18px;margin:0 0 12px}p{color:var(--sub);margin:6px 0}
+.tag{font:12px monospace;color:var(--accent);letter-spacing:.12em}
+.flex{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+button,select{border:1px solid var(--edge);background:#252d3d;color:var(--fg);font:inherit;border-radius:9px;padding:9px 13px;cursor:pointer}
+button[aria-pressed=true]{border-color:var(--accent);background:#21443f;color:#d8fff7}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+.panel{border:1px solid var(--edge);background:var(--panel);border-radius:14px;padding:18px;margin-top:16px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+#groupTabs{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:17px}
+#groupTabs button{text-align:left;min-height:66px;display:flex;flex-direction:column;gap:4px}
+#groupTabs strong{font-size:20px}
+#groupTabs small{color:var(--sub);font-size:11px}
+.timeRow{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center}
+input[type=range]{width:100%;accent-color:var(--accent)}
+#dayOut{font-size:24px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent)}
+#fig{width:100%;height:auto;display:block;min-height:210px;touch-action:pan-y}
+.chartbox{overflow:hidden}
+#facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0}
+.fact{border:1px solid var(--edge);border-radius:10px;padding:12px;background:#151d2a;min-width:0}
+.fact small{color:var(--sub);display:block;min-height:34px}.fact strong{font-size:clamp(15px,2.5vw,24px);overflow-wrap:anywhere}
+#records{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.record{background:#141c29;border:1px solid var(--edge);border-radius:9px;padding:9px 12px;text-align:left;min-width:0}
+.record small{display:block;color:var(--sub)}.record strong{font-size:17px;font-variant-numeric:tabular-nums}
+.record[aria-pressed=true]{border-color:var(--accent)}
+#modeButtons{display:flex;gap:8px;flex-wrap:wrap}
+#source{font-size:12px;color:var(--sub)}
+#tooltip{min-height:24px;color:var(--accent);font-variant-numeric:tabular-nums}
+.legend{display:flex;flex-wrap:wrap;gap:12px;color:var(--sub);font-size:12px}
+.swatch{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}
+.svgtext{fill:#b6c4d0;font:13px system-ui,sans-serif}.tick{fill:#a6b8c9;font:12px system-ui,sans-serif}
+footer{border-top:1px solid var(--edge);margin-top:26px;padding-top:16px;color:var(--sub);font-size:12px}
+@media(max-width:880px){#groupTabs{grid-template-columns:repeat(4,1fr)}#facts{grid-template-columns:repeat(2,1fr)}#records{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:550px){main{padding:16px}#groupTabs{grid-template-columns:repeat(2,1fr)}#records{grid-template-columns:1fr}.timeRow{grid-template-columns:1fr auto}.timeRow label{grid-column:1/-1}}
+</style>
+</head>
+<body><main>
+<header><div><div class="tag">BECOME / A—G / INTERACTIVE RESEARCH ATLAS</div>
+<h1 id="heading">自然系统交互数据图谱</h1><p id="subtitle"></p></div>
+<div><div class="flex" aria-label="Language"><button data-lang="zh" aria-pressed="true">中文</button><button data-lang="en" aria-pressed="false">English</button><button data-lang="ru" aria-pressed="false">Русский</button></div><p><a href="./index.html" id="back"></a></p></div>
+</header>
+<section class="panel"><div class="top"><h2 id="domains"></h2><span class="tag">A–D03 · H0—H1095</span></div><div id="groupTabs"></div></section>
+<section class="panel"><div class="top"><h2 id="timeTitle"></h2><div class="flex"><button id="previous"></button><button id="next"></button></div></div>
+<div class="timeRow"><label for="day" id="dayLabel"></label><input id="day" type="range" min="0" max="1095" step="1" value="365"><output id="dayOut" for="day">H+365</output></div><p id="timeNote"></p></section>
+<section class="panel"><div class="top"><h2 id="viewHeading"></h2><div id="modeButtons"></div></div>
+<div id="facts" aria-live="polite"></div><div class="chartbox"><svg id="fig" viewBox="0 0 1000 375" role="img" aria-label="Interactive scientific results visualization"></svg></div>
+<div id="tooltip" aria-live="polite"></div><div id="legend" class="legend"></div></section>
+<section class="panel"><div class="top"><h2 id="samplesHeading"></h2><span id="recordCount" class="tag"></span></div><div id="records"></div></section>
+<section class="panel"><h2 id="evidenceHeading"></h2><p id="summary"></p><p id="source"></p><p id="boundary"></p></section>
+<footer id="footerText"></footer>
+</main>
+<script>
+"use strict";
+const DAYS=[0,180,365,730,900,1095];
+const D={
+ A:{color:"#52d8ce",type:"line",modes:["flux"],metrics:[{id:"flux",unit:"%",samples:[[0,100],[180,77.3],[365,41.759],[730,21.746],[900,9.719],[1095,1.305]]}]},
+ B:{color:"#93a9fc",type:"line",modes:["au"],metrics:[{id:"au",unit:"AU",samples:[[0,.989],[90,1.024],[365,1.581572751],[730,2.181611633],[1095,3.6185]]}]},
+ C:{color:"#feb582",type:"bar",modes:["audit"],metrics:[{id:"audit",unit:"",samples:[[0,5524800],[1,186],[2,179],[3,0]]}]},
+ D:{color:"#dfb1ff",type:"milestone",modes:["temperature"],metrics:[{id:"temperature",unit:"H",samples:[[335,0.0437],[737,-40]]}]},
+ E:{color:"#ffb176",type:"milestone",modes:["weather"],metrics:[{id:"weather",unit:"H",samples:[[187,1],[379,2],[402,3],[425,4],[463,5]]}]},
+ F:{color:"#76b5ee",type:"line",modes:["ice","open"],metrics:[{id:"ice",unit:"m",samples:[[365,.186],[730,.896],[1095,2.935]]},{id:"open",unit:"%",samples:[[365,85.3],[730,66.3],[1095,0]]}]},
+ G:{color:"#f78ab9",type:"interval",modes:["wind"],metrics:[{id:"wind",unit:"×",samples:[[608,12],[609,12],[610,12]]}]}
+};
+const TX={
+ zh:{
+ heading:"自然系统交互数据图谱",subtitle:"太阳系—地球灾害：数值曲线、条件窗口与验证记录",back:"返回原始路线比较",
+ domains:"01 / 研究数据层",timeTitle:"02 / 物理时间定位",dayLabel:"H时钟 · 选择具体日期",timeNote:"时间滑杆用于对齐数据；仅标注已计算采样点或核验窗口，不构造逐日数值。",
+ samplesHeading:"04 / 可点击的数据节点",evidenceHeading:"05 / 数值来源与成立条件",
+ prev:"前一个数据节点",next:"后一个数据节点",
+ footer:"BECOME · 第四、第五幕科研展示 · A–D03主线 · 仅发布展示数据 · 研究原件保存在私有档案。",
+ noData:"该日期没有直接采样值；选择下方数据节点查看实算或条件窗口。",nearest:"最近的有效数据节点",count:"个节点",
+ range:"H时间节点",value:"数值",audit:"条件验算（跨引力分支）",start:"开始",end:"结束",
+ groups:{A:"太阳演化",B:"轨道动力学",C:"小天体",D:"地表热力",E:"大气天气",F:"海洋冰冻圈",G:"空间天气"},
+ modes:{flux:"相对太阳辐照",au:"地日距离",audit:"近遇计算检验",temperature:"温度阈值",weather:"天气条件窗口",ice:"等效海冰厚度",open:"开放水面比例",wind:"太阳风负载"},
+ note:{
+ A:"A–D03 辐照为包含太阳光度与轨道效应的既有展示采样值；采样点之间的连线仅辅助阅读。",
+ B:"地日距离采用现有 A–D03 轨道展示值及 D01 快照；数值属于物理条件模型。",
+ C:"此图为 C 组跨分支的数值验证工作量，属于条件动力学审计，不能解读为 A–D03 撞击概率。横轴为检验阶段，柱长使用 log(1+N) 以便比较。",
+ D:"H335：首个局地持续极寒筛查窗口，受影响模型单元约占地表0.0437%；H737：既有展示中全球日均地表低于−40°C的阈值节点。两个不同指标不可当成连续温度曲线。",
+ E:"天气层的时间节点是必要条件成立的首次或末次窗口，属于受控情景计算，并非实际灾害发生日期。",
+ F:"F07 现有展示的等效海冰厚度和开放水面代理；不得用作真实海域预报。",
+ G:"A06/G05 的 H608–610 为第一轮12倍源端太阳风负载的预计到达窗口；不能据此直接判定电网中断。"
+ },
+ sources:{
+ A:"数据来源：现有 Disaster Atlas A–D03 采样值；A专题正式交接。",
+ B:"数据来源：现有 Disaster Atlas A–D03，D01 地日距离快照。",
+ C:"数据来源：C专题跨题独立验算，5524800个连续区间检查、186候选、179段精算、0次大气接触；跨分支。",
+ D:"数据来源：AD03 全球灾害作者审定稿（D06 H335）；现有 Disaster Atlas D组 H737。",
+ E:"数据来源：AD03 全球灾害作者审定稿（E02/E03/E04/E05条件时点）。",
+ F:"数据来源：现有 Disaster Atlas A–D03 的 F07 采样值。",
+ G:"数据来源：AD03 全球灾害作者审定稿 A06/G05 H608–610。"
+ },
+ bounds:{A:"结果类型：既有情景采样值",B:"结果类型：条件性轨道值",C:"结果类型：跨情景动力学审计",D:"结果类型：两类不同物理阈值",E:"结果类型：受控必要条件窗口",F:"结果类型：低维代理模型",G:"结果类型：传播与源项条件"},
+ records:{
+ C:["检查的连续时间区间","包围盒候选区间","连续极值精算区间","大气接触检出"],
+ D:["首个局地持续极寒窗口：模型面积 0.0437%","全球日均地表低于−40°C：阈值日"],
+ E:["低纬≥26.5°C无冰暖海条件最后成立","≥50 mm/日强降水条件最后成立","强参考风与低降水条件首次共存","冻雨复合层结最后成立","冰塞超容量条件最后成立"],
+ G:["第一轮12倍源端太阳风负载到达","窗口中日","负载窗口最后一天"]
+ }
+ },
+ en:{
+ heading:"Interactive Natural Systems Atlas",subtitle:"Solar system to Earth hazards: measured model outputs, conditional windows, and validation records",back:"Back to scenario comparison",
+ domains:"01 / Research layers",timeTitle:"02 / Physical-time navigator",dayLabel:"H-clock · select a day",timeNote:"The slider aligns events; values are shown only at documented model samples or validated windows, without invented daily interpolation.",
+ samplesHeading:"04 / Selectable data points",evidenceHeading:"05 / Sources and validity limits",
+ prev:"Previous data point",next:"Next data point",footer:"BECOME · Acts IV–V research display · A–D03 primary scenario · Public presentation subset only; source archives remain private.",
+ noData:"No direct sample for this day. Select a documented point below.",nearest:"Nearest documented point",count:"points",
+ range:"H-day",value:"Value",audit:"Conditional validation (across gravity branches)",start:"Start",end:"End",
+ groups:{A:"Solar evolution",B:"Orbital dynamics",C:"Small bodies",D:"Surface energy",E:"Atmosphere",F:"Ocean and ice",G:"Space weather"},
+ modes:{flux:"Relative solar irradiance",au:"Sun–Earth distance",audit:"Close-approach audit",temperature:"Temperature milestones",weather:"Weather-condition windows",ice:"Equivalent sea-ice thickness",open:"Open-water fraction",wind:"Solar-wind forcing"},
+ note:{
+ A:"A–D03 samples incorporate solar luminosity and orbital effects. Connecting lines serve only as visual guides.",
+ B:"Earth distance uses existing A–D03 scenario displays and D01 snapshots; these are conditional physical-model outputs.",
+ C:"Cross-branch C-series numerical verification, not the probability of an A–D03 impact. The horizontal axis shows audit stages; bar lengths use log(1+N).",
+ D:"H335 is the first local persistent extreme-cold window, covering about 0.0437% of the model area; H737 is the existing global daily-mean below −40°C milestone. These are distinct indicators, not a temperature series.",
+ E:"The displayed dates mark first or last valid physical conditions within controlled tests, not observed disasters.",
+ F:"F07 equivalent ice thickness and open-water proxies as previously published; these are not ocean forecasts.",
+ G:"A06/G05 H608–610 is the first predicted arrival window of 12× source solar-wind forcing, not a confirmed grid outage."
+ },
+ sources:{A:"Source: existing A–D03 Disaster Atlas samples and A-series handover.",B:"Source: existing A–D03 Disaster Atlas and D01 distance snapshots.",C:"Source: C-series independent validation: 5,524,800 intervals, 186 candidates, 179 refinements, zero atmospheric contacts, across branches.",D:"Source: AD03 scenario review (D06 H335) and existing D-series chart (H737).",E:"Source: AD03 scenario review (E02/E03/E04/E05 conditional milestones).",F:"Source: F07 samples in the existing A–D03 Disaster Atlas.",G:"Source: A06/G05 solar-wind arrival window in the AD03 scenario review."},
+ bounds:{A:"Type: model samples",B:"Type: conditional orbital model",C:"Type: cross-scenario numerical audit",D:"Type: two distinct threshold tests",E:"Type: conditional weather windows",F:"Type: low-dimensional proxies",G:"Type: source and propagation conditions"},
+ records:{C:["Continuous intervals tested","Bounding-box candidates","Refined closest-approach intervals","Atmospheric contacts detected"],D:["First local persistent extreme cold: 0.0437% of model area","Global daily-mean below −40°C"],E:["Last ≥26.5°C warm ice-free sea condition","Last ≥50 mm/day heavy-rain condition","First joint wind/low-precipitation condition","Last combined freezing-rain structure","Last ice-jam exceedance condition"],G:["First 12× solar-wind arrival","Middle day of arrival window","Last day of arrival window"]}
+ },
+ ru:{
+ heading:"Интерактивный атлас природных систем",subtitle:"От Солнечной системы к земным катастрофам: графики, условия и проверенные результаты",back:"К сравнению сценариев",
+ domains:"01 / Исследовательские слои",timeTitle:"02 / Шкала физического времени",dayLabel:"Время H · выберите день",timeNote:"Шкала синхронизирует события; показаны только документированные точки и интервалы, без искусственной дневной интерполяции.",
+ samplesHeading:"04 / Интерактивные точки данных",evidenceHeading:"05 / Источники и условия применимости",
+ prev:"Предыдущая точка",next:"Следующая точка",footer:"BECOME · Исследования IV–V актов · Основной сценарий A–D03 · Публикуются только демонстрационные данные; архивы остаются закрытыми.",
+ noData:"Для этого дня нет прямого расчётного значения. Выберите документированную точку.",nearest:"Ближайшая расчётная точка",count:"точек",
+ range:"День H",value:"Значение",audit:"Проверка условий (несколько гравитационных ветвей)",start:"Начало",end:"Конец",
+ groups:{A:"Эволюция Солнца",B:"Орбитальная динамика",C:"Малые тела",D:"Тепловой баланс",E:"Атмосфера",F:"Океан и лёд",G:"Космическая погода"},
+ modes:{flux:"Относительная инсоляция",au:"Расстояние Земля–Солнце",audit:"Проверка сближений",temperature:"Температурные пороги",weather:"Условия погоды",ice:"Эквивалентная толщина льда",open:"Доля открытой воды",wind:"Солнечный ветер"},
+ note:{
+ A:"Точки A–D03 учитывают светимость Солнца и орбитальные эффекты. Линии между ними служат только для наглядности.",
+ B:"Расстояние Земли приведено по сценарию A–D03 и контрольным точкам D01; результаты зависят от условий модели.",
+ C:"Численная проверка C по нескольким ветвям, а не вероятность столкновения для A–D03. Длины столбцов рассчитаны по log(1+N).",
+ D:"H335 — первое локальное длительное похолодание (0,0437% площади модели); H737 — порог среднесуточной глобальной температуры ниже −40°C. Это разные показатели.",
+ E:"Даты обозначают первое или последнее выполнение физических условий в контролируемых опытах, а не реальные даты катастроф.",
+ F:"Оценочные толщина льда и доля открытой воды по F07; это не региональный прогноз.",
+ G:"H608–610 — расчётный интервал поступления 12-кратного солнечного ветра A06/G05; отключение электросетей из этого не следует."
+ },
+ sources:{A:"Источник: опубликованные точки A–D03 Disaster Atlas и результаты серии A.",B:"Источник: A–D03 Disaster Atlas и контрольные точки D01.",C:"Источник: независимая проверка серии C: 5 524 800 интервалов, 186 кандидатов, 179 уточнений, ноль входов в атмосферу; несколько ветвей.",D:"Источник: обзор сценария AD03 (D06, H335) и опубликованный порог D (H737).",E:"Источник: обзор AD03, условные точки E02/E03/E04/E05.",F:"Источник: результаты F07 из A–D03 Disaster Atlas.",G:"Источник: окно прихода солнечного ветра A06/G05 в обзоре AD03."},
+ bounds:{A:"Тип: выборка результатов модели",B:"Тип: условная орбитальная модель",C:"Тип: численная проверка разных сценариев",D:"Тип: два различных порога",E:"Тип: окна допустимых условий",F:"Тип: упрощённые модели",G:"Тип: условия источника и распространения"},
+ records:{C:["Проверенные непрерывные интервалы","Кандидаты ограничивающего объёма","Уточнённые интервалы сближения","Входы в атмосферу"],D:["Первое локальное длительное похолодание: 0,0437% площади","Глобальная среднесуточная температура ниже −40°C"],E:["Последнее условие тёплого моря ≥26,5°C","Последнее условие осадков ≥50 мм/сутки","Первое совместное условие ветра и малых осадков","Последнее условие ледяного дождя","Последнее условие превышения при ледяном заторе"],G:["Начало прихода 12-кратного потока","Середина окна","Конец окна"]}
+ }
+};
+let lang="zh",group="A",mode=0,day=365,hovered=-1;
+const e=id=>document.getElementById(id);
+const txt=(id,v)=>{e(id).textContent=v};
+const nodes=g=>D[g].metrics[mode].samples;
+const num=v=>Number(v).toLocaleString(lang==="zh"?"zh-CN":lang==="ru"?"ru-RU":"en-US",{maximumFractionDigits:5});
+const h=n=>"H+"+n;
+function setDay(n){day=Math.min(1095,Math.max(0,Math.round(n)));e("day").value=day;renderTime();renderChart();renderRecords()}
+function allDays(){return [...new Set(nodes(group).map(x=>x[0]))].sort((a,b)=>a-b)}
+function move(d){const a=allDays();const next=d>0?a.find(x=>x>day):a.slice().reverse().find(x=>x<day);setDay(next===undefined?(d>0?a[0]:a[a.length-1]):next)}
+function setGroup(g){group=g;mode=0;hovered=-1;render()}
+function setMode(i){mode=i;render()}
+function renderTime(){txt("dayOut",h(day))}
+function renderTabs(){e("groupTabs").replaceChildren();const t=TX[lang];Object.keys(D).forEach(g=>{const b=document.createElement("button");b.setAttribute("aria-pressed",String(g===group));const big=document.createElement("strong");big.textContent=g;const small=document.createElement("small");small.textContent=t.groups[g];b.append(big,small);b.onclick=()=>setGroup(g);e("groupTabs").appendChild(b)})}
+function fact(label,value){const div=document.createElement("div");div.className="fact";const small=document.createElement("small");small.textContent=label;const strong=document.createElement("strong");strong.textContent=value;div.append(small,strong);return div}
+function renderFacts(){const p=e("facts");p.replaceChildren();const t=TX[lang],x=nodes(group),max=Math.max(...x.map(v=>v[1])),min=Math.min(...x.map(v=>v[1]));const near=x.reduce((a,b)=>Math.abs(b[0]-day)<Math.abs(a[0]-day)?b:a,x[0]);const special=group==="C";p.append(fact(t.range,h(special?0:near[0])),fact(t.value,special?num(near[1]):num(near[1])+" "+(D[group].metrics[mode].unit||"")),fact(t.nearest,special?t.records.C[0]:h(near[0])),fact(special?t.audit:t.modes[D[group].modes[mode]],special?num(x[0][1]):num(min)+" — "+num(max)))}
+function svg(tag,attrs,textContent){const n=document.createElementNS("http://www.w3.org/2000/svg",tag);for(const [k,v] of Object.entries(attrs||{}))n.setAttribute(k,String(v));if(textContent!==undefined)n.textContent=textContent;return n}
+function plot(){const root=e("fig");root.replaceChildren();const t=TX[lang],data=nodes(group),color=D[group].color;const xmin=70,xmax=954,ymin=38,ymax=312;const px=d=>xmin+d/1095*(xmax-xmin);const axis=()=>{for(let j=0;j<4;j++){let y=ymin+j*(ymax-ymin)/3;root.append(svg("path",{d:"M"+xmin+" "+y+"H"+xmax,stroke:"#344052","stroke-width":1}));}for(const d of [0,180,365,730,900,1095])root.append(svg("text",{x:px(d),y:346,"text-anchor":"middle",class:"tick"},"H"+d));root.append(svg("line",{x1:px(day),y1:ymin,x2:px(day),y2:ymax,stroke:"#e9bf72","stroke-dasharray":"5 5","stroke-width":1.5}))};
+const label=(x,y,text,anchor="start")=>root.append(svg("text",{x,y,fill:"#dfeaf6","font-size":13,"text-anchor":anchor},text));
+axis();
+if(D[group].type==="line"){const vals=data.map(p=>p[1]),low=Math.min(0,...vals),hi=Math.max(...vals)*1.14||1;const py=v=>ymax-(v-low)/(hi-low)*(ymax-ymin);for(let j=0;j<=4;j++){let v=low+(hi-low)*j/4;root.append(svg("text",{x:60,y:py(v)+4,class:"tick","text-anchor":"end"},num(v)))}root.append(svg("polyline",{points:data.map(p=>px(p[0])+","+py(p[1])).join(" "),fill:"none",stroke:color,"stroke-width":3}));data.forEach((p,i)=>{const c=svg("circle",{cx:px(p[0]),cy:py(p[1]),r:Math.abs(day-p[0])<2?8:6,fill:color,stroke:"#15202c","stroke-width":2,tabindex:0,role:"button","aria-label":h(p[0])+" "+num(p[1])});c.append(svg("title",{},h(p[0])+" · "+num(p[1])+" "+D[group].metrics[mode].unit));c.addEventListener("click",()=>setDay(p[0]));c.addEventListener("mouseenter",()=>{txt("tooltip",h(p[0])+" · "+num(p[1])+" "+D[group].metrics[mode].unit)});c.addEventListener("keydown",ev=>{if(ev.key==="Enter")setDay(p[0])});root.append(c)})}
+else if(D[group].type==="bar"){const labels=t.records.C;const maxlog=Math.log1p(data[0][1]);data.forEach((p,i)=>{const y=57+i*71,len=Math.max(0,Math.log1p(p[1])/maxlog*625);label(75,y-12,labels[i]);const bar=svg("rect",{x:75,y,width:len,height:20,rx:5,fill:color});bar.append(svg("title",{},labels[i]+": "+num(p[1])));root.append(bar);label(85+len,y+16,num(p[1]))})}
+else if(D[group].type==="milestone"){data.forEach((p,i)=>{const y=63+i*(group==="E"?48:90);root.append(svg("line",{x1:xmin,y1:y,x2:xmax,y2:y,stroke:"#344052","stroke-width":2}));const c=svg("circle",{cx:px(p[0]),cy:y,r:9,fill:color,tabindex:0,role:"button"});c.append(svg("title",{},h(p[0])+" · "+t.records[group][i]));c.addEventListener("click",()=>setDay(p[0]));c.addEventListener("keydown",ev=>{if(ev.key==="Enter")setDay(p[0])});root.append(c);const x=Math.min(px(p[0])+14,680);label(x,y+5,h(p[0])+" · "+t.records[group][i])})}
+else if(D[group].type==="interval"){root.append(svg("rect",{x:px(608),y:110,width:Math.max(12,px(610)-px(608)),height:95,fill:color,opacity:.8}));root.append(svg("circle",{cx:px(609),cy:150,r:9,fill:color}));label(Math.max(90,px(608)-180),95,h(608)+"–"+h(610));label(Math.max(90,px(608)-180),230,"12×");}
+if(D[group].type==="bar")txt("tooltip",t.audit);else{const exact=data.find(p=>p[0]===day);txt("tooltip",exact?h(day)+" · "+num(exact[1])+" "+D[group].metrics[mode].unit:t.noData)}
+}
+function renderChart(){renderFacts();plot()}
+function renderRecords(){const t=TX[lang],x=nodes(group),parent=e("records");parent.replaceChildren();x.forEach((p,i)=>{const b=document.createElement("button");b.className="record";b.setAttribute("aria-pressed",String(day===p[0]));const sm=document.createElement("small");sm.textContent=t.records[group]?t.records[group][i]:h(p[0]);const st=document.createElement("strong");st.textContent=group==="C"?num(p[1]):h(p[0])+" · "+num(p[1])+(group==="G"?"×":group==="D"?(i===0?"%":"°C"):" "+D[group].metrics[mode].unit);b.append(sm,st);b.onclick=()=>setDay(group==="C"?day:p[0]);parent.append(b)});txt("recordCount",x.length+" "+t.count)}
+function render(){const t=TX[lang],m=D[group].modes[mode];["heading","subtitle","back","domains","timeTitle","dayLabel","timeNote","samplesHeading","evidenceHeading"].forEach(k=>txt(k,t[k]));txt("previous",t.prev);txt("next",t.next);txt("viewHeading",group+" / "+t.groups[group]);txt("summary",t.note[group]);txt("source",t.sources[group]);txt("boundary",t.bounds[group]);txt("footerText",t.footer);renderTabs();const buttons=e("modeButtons");buttons.replaceChildren();D[group].modes.forEach((name,i)=>{const b=document.createElement("button");b.textContent=t.modes[name];b.setAttribute("aria-pressed",String(i===mode));b.onclick=()=>setMode(i);buttons.append(b)});renderTime();renderChart();renderRecords();e("legend").replaceChildren()}
+document.querySelectorAll("[data-lang]").forEach(b=>b.onclick=()=>{lang=b.dataset.lang;document.documentElement.lang=lang==="zh"?"zh-Hans":lang;document.querySelectorAll("[data-lang]").forEach(n=>n.setAttribute("aria-pressed",String(n.dataset.lang===lang)));render()});
+e("day").oninput=()=>setDay(Number(e("day").value));e("previous").onclick=()=>move(-1);e("next").onclick=()=>move(1);render();
+</script></body></html>
