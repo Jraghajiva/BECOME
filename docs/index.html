@@ -2,14 +2,36 @@
 <html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>BECOME | Disaster Atlas</title>
 <style>
 :root{color-scheme:dark;--bg:#11141e;--panel:#1b2030;--border:#30394c;--muted:#a1adbf;--text:#edf2f9;--accent:#48d4c9}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 system-ui,sans-serif}main{max-width:1220px;margin:auto;padding:28px 24px 60px}header{border-bottom:1px solid var(--border);padding-bottom:22px;margin-bottom:24px}h1{font-size:clamp(28px,5vw,50px);letter-spacing:-.04em;margin:5px 0}h2{font-size:19px;margin:0 0 15px}p{margin:8px 0;color:var(--muted)}.eyebrow{font:12px monospace;letter-spacing:.18em;color:var(--accent)}.nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}button{font:inherit;color:var(--text);border:1px solid var(--border);background:#222838;border-radius:8px;padding:9px 14px;cursor:pointer}button[aria-pressed=true]{border-color:var(--accent);background:#234344;color:#b4fff7}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.panel{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:20px;margin:16px 0}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.metric{padding:14px;border:1px solid var(--border);border-radius:10px;background:#161b28}.metric svg{display:block;width:23px;height:23px;color:var(--accent);margin-bottom:8px}.metric small{display:block;color:var(--muted)}.metric strong{font-size:clamp(20px,3vw,32px);font-variant-numeric:tabular-nums}.subgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.subgrid>.panel{margin:0}.line{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--border)}.line span:first-child{color:var(--muted)}.line:last-child{border:0}.bar{height:8px;background:#30394c;border-radius:10px;overflow:hidden;margin:5px 0 14px}.bar i{display:block;height:100%;background:var(--accent)}.pill{font-size:12px;color:var(--muted);border:1px solid var(--border);padding:4px 8px;border-radius:6px;display:inline-block}.chart{width:100%;height:auto;min-height:210px;display:block}.legend{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}th,td{text-align:right;padding:10px;border-bottom:1px solid var(--border);white-space:nowrap}th:first-child,td:first-child{text-align:left}th{color:var(--muted);font-size:12px}.note{border-left:3px solid #ffca6a;padding-left:12px;color:#ddd0af}.modules{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.modules button{text-align:left}.footer{font-size:12px;color:var(--muted)}a{color:var(--accent)}@media(max-width:800px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.subgrid{grid-template-columns:1fr}.modules{grid-template-columns:repeat(2,1fr)}main{padding:16px}.panel{padding:14px}}@media(prefers-reduced-motion:no-preference){.bar i{transition:width .2s}}
+
+#section06 .msbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+#section06 #msLanguages{margin:0}#section06 #msLanguages button{font-size:12px;padding:6px 10px}
+#section06 .modules button{min-height:56px;display:flex;flex-direction:column;text-align:left;gap:2px}
+#section06 .modules strong{font-size:20px}#section06 .modules small{color:var(--muted);font-size:11px}
+#section06 .msheader{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+#section06 .msheader h3{font-size:20px;margin:0}
+#section06 .msnetwork{width:100%;height:auto;display:block;max-height:215px;background:#151b28;border:1px solid var(--border);border-radius:12px}
+#section06 .mslinks{display:flex;flex-wrap:wrap;gap:7px;margin:9px 0}
+#section06 .mslinks button{font-size:12px;padding:7px 9px}
+#section06 .mssection{font-size:15px;font-weight:650;margin:17px 0 9px}
+#section06 .msline{display:grid;grid-template-columns:85px 1fr 75px;gap:12px;align-items:center;margin:10px 0}
+#section06 .msline input{width:100%;accent-color:#48d4c9}
+#section06 .msline output{text-align:right;font-variant-numeric:tabular-nums}
+#section06 .msplot{display:block;width:100%;height:auto;min-height:210px;border-radius:12px;background:#151b28;border:1px solid var(--border)}
+#section06 .msrecords{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+#section06 .msrecords button{font-size:12px;padding:8px 10px;text-align:left;max-width:290px}
+#section06 .mscards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+#section06 .mscard{background:#161e2d;border:1px solid var(--border);border-radius:10px;padding:12px}
+#section06 .mscard small{color:var(--muted);display:block}
+#section06 .mscard strong{font-size:22px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+#section06 .msfoot p{font-size:12px;line-height:1.7}
+@media(max-width:620px){#section06 .mscards{grid-template-columns:1fr 1fr}#section06 .msline{grid-template-columns:1fr 70px}#section06 .msline label{grid-column:1/-1}}
 </style></head><body><main>
 <header><div class="eyebrow">BECOME / RESEARCH CONSOLE / V0.1</div><h1>Disaster Atlas <span style="color:var(--accent)">变化</span></h1><p>第四、第五幕 · 太阳系—地球—社会系统灾害路线交互比较</p><span class="pill">H+0—1095</span> <span class="pill">既有条件计算 · 全域联算待完成</span></header>
-<section class="panel" aria-label="A-G interactive visualization"><h2>A—G / Interactive Data Atlas · 交互科学数据图谱</h2><p>新增：AD03主线 A—G 科研数值、时间滑杆、专题曲线、条件窗口与验证结果。支持中文、English、Русский。</p><p><a href="./atlas-ag.html" style="font-size:19px;font-weight:700">打开 A—G 交互可视化图谱 / Open the Interactive A–G Atlas / Открыть интерактивный атлас A–G</a></p></section>
 <section class="panel"><h2>01 / 路线选择</h2><div class="nav" id="routes"></div><div id="status" aria-live="polite"></div><div class="grid" id="metrics" style="margin-top:16px"></div><div class="subgrid" style="margin-top:16px"><div id="physics"></div><div><h2>年度状态</h2><div class="nav" id="years"></div><div id="annual"></div></div></div></section>
 <section class="panel"><h2>02 / 太阳辐照与海洋冻结</h2><div class="nav" id="chartButtons"></div><div class="legend" id="legend"></div><svg id="chart" class="chart" viewBox="0 0 760 310" role="img" aria-label="四条历史计算路线的时间序列"></svg><p id="chartNote"></p></section>
 <div class="subgrid"><section class="panel"><h2>03 / 自然事件窗口</h2><div id="timeline"></div><p>横条表示H日位置；末日、首日与条件覆盖分别按原判据解释。</p></section><section class="panel"><h2>04 / 人口与公共服务</h2><p>90日储备、低风险参数、每路线276种条件组合。</p><div id="social"></div><p>触发比例是模型实验组合比例，不是人口比例或事件概率。</p></section></div>
 <section class="panel"><h2>05 / 全路线数据矩阵</h2><div class="tablewrap"><table id="matrix"></table></div></section>
-<section class="panel"><h2>06 / A—J 结构导航</h2><div class="modules" id="modules"></div><div id="moduleDetail" style="margin-top:16px"></div></section>
+<section class="panel" id="section06"><div class="msbar"><h2>06 / A—J 结构导航 · 交互可视化</h2><div id="msLanguages" class="nav" aria-label="Language"></div></div><div class="modules" id="modules"></div><div id="moduleDetail" style="margin-top:16px"></div></section>
 <section class="panel"><h2>07 / 模型边界与来源</h2><p>作者裁定：X1内部场折叠 → 银河帝国0骨干网络 → 远端恒星约束阵列。A-D04历史球壳外运与该设定不相容，保留历史结果；修正版A-D04R待重新求解。局部质量即时移除为建模近似，折叠场额外引力未量化。</p><p>D01 四主情景关键时刻简表（180日值取展示用约数）；D04/D06 地表温度及阈值；E03 冻雨联合条件；F07 气海冰耦合报告；H02 第三阶段作物条件；J01 冷暴露条件；J02 scenario window summary。H为采集物理日，尚未与小说P日对齐。曲线连接已知采样点，不能作为逐日解。</p><p>本页为独立科幻项目的研究结果浏览器；浏览器执行交互、图表及比较，不在客户端重跑完整科学模型。未来完整计算成果可增量接入。</p></section><div class="footer">BECOME / Disaster Atlas · 2026-11-26 · Source snapshots A—J · v0.1</div></main>
 <script>
 const DATA=[{"id":"A-D01","name":"快速衰退","color":"#ff8c66","flux":[100,71.3,41.363,17.704,9.006,1.584],"dist":3.7679,"temp":-83.93199999999999,"ice":[0.246,1.008,3.282],"open":[81.9,53.5,0],"events":[49,91,203,404,564,697,921],"social":[194,426.5,475,457.5],"count":[276,92,223,92],"mass":"分段恆速","thermal":30,"wind":"平穩","return":"無","gravity":"局部質量即時移除","status":"相容候選"},{"id":"A-D02","name":"持續衰退","color":"#b587ff","flux":[100,71.3,41.363,18.524,10.967,4.969],"dist":3.7679,"temp":-80.41299999999998,"ice":[0.246,0.997,3.084],"open":[81.9,53.5,0],"events":[49,91,203,404,565,699,971],"social":[194,426.5,475,457.5],"count":[276,92,223,92],"mass":"分段恆速","thermal":365,"wind":"平穩","return":"無","gravity":"局部質量即時移除","status":"相容候選"},{"id":"A-D03","name":"前緩後急","color":"#48d4c9","flux":[100,77.3,41.759,21.746,9.719,1.305],"dist":3.6185,"temp":-82.67699999999996,"ice":[0.186,0.896,2.935],"open":[85.3,66.3,0],"events":[91,119,224,425,588,737,976],"social":[194,425,475,456],"count":[276,114,245,100],"mass":"連續變速","thermal":30,"wind":"H600–602、950–952：12倍","return":"微量","gravity":"局部質量即時移除","status":"相容候選"},{"id":"A-D04","name":"延緩衰退（歷史對照）","color":"#ffca6a","flux":[100,76.2,43.581,25.004,14.98,6.053],"dist":3.4233,"temp":-76.27099999999999,"ice":[0.238,0.954,2.414],"open":[81.9,66.3,25.5],"events":[77,112,224,432,597,751,null],"social":[194,427,476,458],"count":[276,109,237,98],"mass":"連續變速","thermal":365,"wind":"平穩","return":"微量","gravity":"100 km/s球殼外運","status":"歷史對照；引力邊界不相容"},{"id":"A-D04R","name":"修正引力版本","color":"#a1a8b8","flux":null,"mass":"連續變速","thermal":365,"wind":"平穩","return":"微量","gravity":"局部質量即時移除","status":"待重新計算"}];
@@ -33,5 +55,173 @@ el("timeline").innerHTML=r.events?EVENTS.map((e,i)=>line(e,r.events[i]==null?"H1
 el("social").innerHTML=r.social?SOCIAL.map((s,i)=>line(s,"H+"+r.social[i])+line("触发组合",r.count[i]+" / 276")+bar(r.count[i],276,r.color)).join(""):"<p>待重算</p>";drawChart();}
 function drawChart(){const cfg=[["flux","辐照 (%)",DAYS,100],["ice","等效冰厚 (m)",YEARS,4],["open","开放水面代理 (%)",YEARS,100]],j=cfg.findIndex(x=>x[0]===chartType),[key,unit,days,max]=cfg[j];buttons("chartButtons",["太阳辐照","海冰厚度","开放水面"],j,i=>{chartType=cfg[i][0];drawChart()});const X=d=>56+d/1095*675,Y=v=>265-v/max*225;let s='<title>'+unit+'</title>';for(let i=0;i<=4;i++){let v=max*i/4;s+='<path d="M56 '+Y(v)+'H731" stroke="#343e50"/><text x="48" y="'+(Y(v)+4)+'" text-anchor="end" fill="#a1adbf" font-size="12">'+v+'</text>'}for(let d of [0,365,730,1095])s+='<text x="'+X(d)+'" y="288" text-anchor="middle" fill="#a1adbf" font-size="12">'+d+'</text>';s+='<text x="56" y="22" fill="#a1adbf" font-size="13">'+unit+'</text>';for(const r of DATA.filter(x=>x.flux)){const points=r[key].map((v,i)=>X(days[i])+','+Y(v)).join(' ');s+='<polyline points="'+points+'" stroke="'+r.color+'" stroke-width="'+(r===DATA[selected]?3.8:2)+'" fill="none" '+(r.id==="A-D04"?'stroke-dasharray="7 5"':'')+'/>';r[key].forEach((v,i)=>s+='<circle cx="'+X(days[i])+'" cy="'+Y(v)+'" r="4" fill="'+r.color+'"><title>'+r.id+' H+'+days[i]+': '+v+'</title></circle>')}el("chart").innerHTML=s;el("legend").innerHTML=DATA.filter(x=>x.flux).map(r=>'<span><i class="dot" style="background:'+r.color+'"></i>'+r.id+(r.id==="A-D04"?" 历史":"")+'</span>').join("");el("chartNote").textContent="H日；连接原有采样值。A-D04R尚无数据。"}
 function matrix(){const rows=[["末期辐照 (%)",r=>r.flux&&fmt(r.flux[5])],["末期温度 (°C)",r=>r.flux&&fmt(r.temp)],["末期地日距离 (AU)",r=>r.flux&&fmt(r.dist,3)],["末期冰厚 (m)",r=>r.ice&&fmt(r.ice[2],3)],["末期开水面代理 (%)",r=>r.open&&r.open[2]],...EVENTS.map((e,i)=>[e,r=>r.events?(r.events[i]===null?"未达":"H+"+r.events[i]):null])];el("matrix").innerHTML="<thead><tr><th>指标</th>"+DATA.map(r=>"<th>"+r.id+"</th>").join("")+"</tr></thead><tbody>"+rows.map(([label,f])=>"<tr><td>"+label+"</td>"+DATA.map(r=>"<td>"+(f(r)??"—")+"</td>").join("")+"</tr>").join("")+"</tbody>"}
-function renderModules(){buttons("modules",MODULES.map(x=>x[0]+" · "+x[1]),mod,i=>{mod=i;renderModules()});const a=MODULES[mod];el("moduleDetail").innerHTML="<strong>"+a[0]+" / "+a[1]+"</strong><p>"+a[2]+"</p><p>主要连接："+a[3]+"</p>"}matrix();renderModules();render();
+
+const MS06={
+ A:{type:"line",color:"#48d4c9",series:[{id:"flux",unit:"%",data:[[0,100],[180,77.3],[365,41.759],[730,21.746],[900,9.719],[1095,1.305]]}]},
+ B:{type:"line",color:"#99b0fa",series:[{id:"distance",unit:"AU",data:[[0,.989],[90,1.024],[309.64,1.5],[365,1.581572751],[730,2.181611633],[1095,3.6185]]}]},
+ C:{type:"bars",color:"#ffc085",series:[{id:"audit",unit:"",data:[[0,5524800],[1,186],[2,179],[3,0]]}]},
+ D:{type:"events",color:"#d9b0f5",series:[{id:"cold",unit:"",data:[[335,.0437],[737,-40]]}]},
+ E:{type:"events",color:"#ffb38d",series:[{id:"weather",unit:"",data:[[187,26.5],[379,50],[402,15],[425,0],[463,97]]}]},
+ F:{type:"line",color:"#7ac4ee",series:[{id:"ice",unit:"m",data:[[365,.186],[730,.896],[1095,2.935]]},{id:"open",unit:"%",data:[[365,85.3],[730,66.3],[1095,0]]}]},
+ G:{type:"events",color:"#f6a1c0",series:[{id:"wind",unit:"×",data:[[608,12],[609,12],[610,12]]}]},
+ H:{type:"events",color:"#9fd4ac",series:[{id:"crop",unit:"",data:[[91,0],[119,0],[224,0]]}]},
+ I:{type:"bars",color:"#c7b5ff",series:[{id:"engineering",unit:"",data:[[0,1656],[1,7744],[2,9936],[3,56691]]}]},
+ J:{type:"events",color:"#ffbf85",series:[{id:"services",unit:"",data:[[194,276],[425,114],[475,245],[456,100]]},{id:"counts",unit:"/276",data:[[0,276],[1,114],[2,245],[3,100]]}]}
+};
+const MS06REL={
+"AB":["太阳减质→轨道演化","Mass loss → orbital dynamics","Потеря массы → орбиты"],
+"AD":["太阳辐照→热收支","Irradiance → heat budget","Инсоляция → тепловой баланс"],
+"AG":["太阳风→地磁环境","Solar wind → geomagnetic field","Солнечный ветер → геомагнитная среда"],
+"BC":["轨道改变→近遇条件","Orbits → encounter geometry","Орбиты → сближения"],
+"BD":["地日距离→辐照","Distance → insolation","Расстояние → инсоляция"],
+"BG":["引力变化→潮汐","Gravity → tides","Гравитация → приливы"],
+"CE":["撞击→大气扰动","Impact → atmosphere","Удар → атмосфера"],
+"CF":["撞击→海洋影响","Impact → oceans","Удар → океан"],
+"CG":["撞击→地质扰动","Impact → geology","Удар → геология"],
+"CI":["撞击风险→设施","Impact risk → assets","Риск удара → сети"],
+"CJ":["灾害暴露→人口","Hazard exposure → population","Опасность → население"],
+"DE":["热量收支→天气","Heat budget → weather","Тепловой баланс → погода"],
+"DF":["温度→海冰增长","Temperature → sea ice","Температура → морской лёд"],
+"DH":["光温→作物生长","Light/heat → crops","Свет/тепло → урожай"],
+"DI":["低温→供暖需求","Cold → heating demand","Холод → отопление"],
+"EF":["降水→水文反馈","Rainfall → hydrology","Осадки → гидрология"],
+"EH":["霜冻降水→农业","Frost/rain → agriculture","Заморозки/осадки → посевы"],
+"EI":["冻雨风暴→电力交通","Ice storms → utilities","Обледенение → сети"],
+"EJ":["天气暴露→健康","Weather → health","Погода → здоровье"],
+"FG":["地热潮汐→水体变化","Geothermal/tides → water","Геотермия/приливы → вода"],
+"FH":["淡水→农作物供水","Freshwater → crop water","Пресная вода → орошение"],
+"FI":["冻结与供水→泵站","Freezing/water → pumping","Промерзание/вода → насосы"],
+"GI":["地震地磁→设施","Seismic/geomagnetic → assets","Сейсмика/магнетизм → сети"],
+"GJ":["地质风险→人口暴露","Geohazards → exposure","Геориски → население"],
+"HI":["农产品→物流","Food output → logistics","Урожай → логистика"],
+"HJ":["粮食→人口营养","Food supply → nutrition","Продовольствие → питание"],
+"IJ":["电热水通信→公共服务","Utilities → public services","Коммунальные сети → услуги"]
+};
+const MS06LANG={
+zh:{groups:["太阳演化","天体动力学","撞击与近遇","地球热力学","大气与天气","海洋与水文","地质与空间天气","生物圈与农业","基础设施","人口与组织"],
+titles:["相对太阳辐照","地日距离","跨分支数值验算","低温条件节点","天气条件窗口","海冰与开放水面","太阳风异常条件","作物条件窗口","设施条件与事件计算","公共服务条件"],
+mode:{flux:"相对辐照",distance:"地日距离",audit:"近遇检验次数",cold:"低温事件",weather:"天气条件",ice:"海冰厚度",open:"开放水面比例",wind:"太阳风负载",crop:"作物收成末日",engineering:"工程计算规模",services:"压力时间",counts:"触发组合"},
+connections:"关联机制 · 点击节点或下列关联项切换",visual:"直接可操作的数据图表",date:"物理时间",points:"有效数据点",nearest:"最近数据节点",value:"当前点数值",nodata:"无逐日实算值；仅显示已记录数据点。",source:"来源",countnote:"统计的是计算组合与条件窗口，不能解释为灾害概率。",
+item:{C:["连续检查区间","边界盒候选","ODE连续极值复核","大气接触检出"],D:["H335 局地极寒；模型面积0.0437%","H737 全球日均地表低于−40°C"],E:["暖海26.5°C最后成立","50mm/日降水条件最后成立","15m/s风与低降水首次共存","冻雨联合层结最后成立","冰塞超容量最后条件"],G:["太阳风异常到达首日","到达窗口中日","到达窗口末日"],H:["水稻新播可收成末日","玉米新播可收成末日","小麦新播可收成末日"],I:["I01能源组合","I01持续缺口事件","I02多层网络轨迹","I02持续事件窗"],J:["食品供应不足","饮水供应不足","医疗服务不足","活动性肠道感染>5%"]},
+notes:{
+A:"A–D03六个公开样本，样本间连线仅辅助阅读；无逐日插值。",
+B:"A–D03轨道模型快照。H309.64是地日距离首次达1.5AU的条件时刻。",
+C:"C组多引力分支数值审计，数字并非AD03撞击概率。",
+D:"H335与H737为不同指标，不能连接成气温曲线。",
+E:"这些是首个或最后一个成立的受控条件。H425表示冻雨层结最后成立日。",
+F:"F07 A–D03 等效海冰厚度、开放水面代理；不对应真实具名海域预报。",
+G:"H608—610为12倍太阳风源端负载的第一轮到达窗口，并非停电日期。",
+H:"日期是新播种条件下可收成的末日；并非当日全球绝收。",
+I:"展示I01、I02的计算组合和事件数量；不是实际基础设施总量。",
+J:"H日及276分母基于条件组合；不代表全球人口比例。"},
+sources:{A:"A专题正式交接及现有站点A–D03/D01快照",B:"现有站点A–D03/D01及B02轨道阈值",C:"C专题2026-11-22跨题独立物理补算",D:"AD03灾害审定稿D06及现有D组阈值",E:"AD03灾害审定稿E02/E03/E04/E05",F:"现有站点F07 A–D03数据",G:"AD03灾害审定稿A06/G05",H:"现有站点A–D03 H02作物条件",I:"I专题现行母档I01/I02",J:"现有站点J02 A–D03汇总"}},
+en:{groups:["Solar evolution","Orbital dynamics","Impact and encounter","Earth thermal system","Atmosphere and weather","Ocean and hydrology","Geology and space weather","Biosphere and agriculture","Infrastructure","Population and organizations"],
+titles:["Relative irradiance","Earth–Sun distance","Cross-branch numerical audit","Cold-condition milestones","Weather-condition windows","Sea ice and open water","Solar-wind forcing","Crop viability windows","Engineering simulation workload","Public-service conditions"],
+mode:{flux:"Relative irradiance",distance:"Earth–Sun distance",audit:"Encounter audit",cold:"Cold milestones",weather:"Weather windows",ice:"Sea-ice thickness",open:"Open-water fraction",wind:"Solar-wind forcing",crop:"Latest viable sowing",engineering:"Engineering counts",services:"Stress timing",counts:"Trigger combinations"},
+connections:"Linked mechanisms · click a node to switch",visual:"Interactive research charts",date:"Physical H day",points:"Recorded points",nearest:"Nearest data point",value:"Sample value",nodata:"No direct daily model output at this day.",source:"Source",countnote:"Counts are simulated combinations or event windows, not hazard probabilities.",
+item:{C:["Continuous intervals tested","Bounding-box candidates","Continuous ODE checks","Atmospheric contacts"],D:["H335 localized sustained cold; model area 0.0437%","H737 global daily mean below −40°C"],E:["Last 26.5°C warm sea condition","Last ≥50mm/day heavy-rain condition","First 15m/s wind/low-rain joint condition","Last freezing-rain layer condition","Last ice-jam exceedance condition"],G:["Arrival window begins","Window midpoint","Window ends"],H:["Rice latest harvestable sowing","Maize latest harvestable sowing","Wheat latest harvestable sowing"],I:["I01 energy combinations","I01 deficit windows","I02 utility network trajectories","I02 sustained event windows"],J:["Food shortage","Drinking-water shortage","Healthcare shortage","Active enteric infection >5%"]},
+notes:{A:"Six published A–D03 samples; lines are guides, not daily interpolation.",B:"A–D03 orbital snapshots; H309.64 marks the modeled 1.5 AU threshold.",C:"Cross-branch C-series numerical audit, not the A–D03 impact probability.",D:"H335 and H737 measure different conditions and cannot form a temperature curve.",E:"Controlled first/last validity windows. H425 is the last valid freezing-rain structure.",F:"F07 A–D03 proxy ice thickness and open water, not regional observations.",G:"H608–610 is the first arrival window for 12× solar-wind forcing, not a power failure.",H:"Latest sowing dates that still allow harvest, not dates of universal crop failure.",I:"I01/I02 model workload and event windows, not real facility counts.",J:"H days and denominator 276 are conditional simulation scenarios, not population shares."},
+sources:{A:"A-series handover and existing A–D03/D01 samples",B:"A–D03/D01 orbital samples and B02 threshold",C:"C-series independent cross-branch audit (2026-11-22)",D:"AD03 review D06 and previous D-series threshold",E:"AD03 review E02/E03/E04/E05",F:"Existing A–D03 F07 series",G:"AD03 A06/G05 solar-wind review",H:"Existing A–D03 H02 crop windows",I:"I-series master record I01/I02",J:"Existing A–D03 J02 summary"}},
+ru:{groups:["Эволюция Солнца","Орбитальная динамика","Удары и сближения","Тепловая система Земли","Атмосфера и погода","Океан и гидрология","Геология и космическая погода","Биосфера и земледелие","Инфраструктура","Население и организации"],
+titles:["Относительная инсоляция","Расстояние Земля–Солнце","Межветвевая численная проверка","Пороги холода","Окна погодных условий","Морской лёд и открытая вода","Нагрузка солнечного ветра","Окна пригодности посева","Расчётные условия инфраструктуры","Условия общественных услуг"],
+mode:{flux:"Инсоляция",distance:"Расстояние Земля–Солнце",audit:"Проверка сближений",cold:"Пороги холода",weather:"Погодные условия",ice:"Толщина льда",open:"Доля открытой воды",wind:"Солнечный ветер",crop:"Последний срок посева",engineering:"Статистика расчётов",services:"Время нагрузки",counts:"Комбинации условий"},
+connections:"Связанные механизмы · выберите узел",visual:"Интерактивные графики",date:"Физический день H",points:"Точки данных",nearest:"Ближайшая точка",value:"Значение",nodata:"Для этого дня нет прямого расчётного значения.",source:"Источник",countnote:"Количество расчётных вариантов и окон, а не вероятность катастрофы.",
+item:{C:["Проверенные непрерывные интервалы","Кандидаты ограничивающего объёма","Уточнения с ОДУ","Входы в атмосферу"],D:["H335 локальный холод: 0,0437% площади модели","H737 среднесуточная глобальная температура ниже −40°C"],E:["Последние условия тёплого моря 26,5°C","Последние условия осадков ≥50мм/сутки","Первое совместное условие ветра и слабого дождя","Последняя структура ледяного дождя","Последнее условие ледяного затора"],G:["Начало окна","Середина окна","Конец окна"],H:["Рис: последний срок посева","Кукуруза: последний срок посева","Пшеница: последний срок посева"],I:["I01 энергетические комбинации","I01 интервалы дефицита","I02 траектории сетей","I02 интервалы событий"],J:["Недостаток продовольствия","Недостаток питьевой воды","Недостаток медпомощи","Кишечная инфекция >5%"]},
+notes:{A:"Шесть опубликованных точек A–D03; линия служит только для наглядности.",B:"Условные орбитальные значения A–D03. H309.64 — достижение 1,5 а.е.",C:"Межветвевая проверка серии C, не вероятность столкновения A–D03.",D:"H335 и H737 характеризуют различные условия, не единую кривую температуры.",E:"Первое или последнее выполнение контролируемых условий. H425 — последний допустимый случай ледяного дождя.",F:"Прокси F07 A–D03, не наблюдение реальных регионов.",G:"H608–610 — приход 12-кратной нагрузки, не отключение электросетей.",H:"Последний срок посева для получения урожая, не гибель всего урожая.",I:"Количество расчётов I01/I02, не число реальных объектов.",J:"276 модельных вариантов, а не доля населения."},
+sources:{A:"Серия A и A–D03/D01",B:"A–D03/D01 и порог B02",C:"Независимая проверка C от 22.11.2026",D:"Обзор AD03 D06",E:"Обзор AD03 E02/E03/E04/E05",F:"Опубликованные значения F07 A–D03",G:"Обзор A06/G05",H:"Серия H02 A–D03",I:"Результаты I01/I02",J:"Результаты J02 A–D03"}}
+};
+let msLang="zh",msMode=0,msDay=365,msIndex=0;
+const msGroup=()=>MODULES[mod][0], msModel=()=>MS06[msGroup()],msSeries=()=>msModel().series[msMode],msT=()=>MS06LANG[msLang];
+const msFmt=v=>Number(v).toLocaleString(msLang==="zh"?"zh-CN":msLang==="ru"?"ru-RU":"en-US",{maximumFractionDigits:5});
+const msH=d=>"H+"+d;
+const msRelated=(a,b)=>MS06REL[[a,b].sort().join("")]?.[["zh","en","ru"].indexOf(msLang)]||msT().groups[MODULES.findIndex(x=>x[0]===b)];
+function msSwitch(i){mod=i;msMode=0;msIndex=0;msDay=365;renderModules()}
+function msLanguage(v){msLang=v;renderModules()}
+function msChangeMode(i){msMode=i;msIndex=0;msRenderData()}
+function msShape(tag,props,body){const n=document.createElementNS("http://www.w3.org/2000/svg",tag);for(const [k,v]of Object.entries(props))n.setAttribute(k,v);if(body!==undefined)n.textContent=body;return n}
+function msGraph(){
+ const s=el("msGraph");s.replaceChildren();
+ const g=msGroup(),n=MODULES[mod][3].split(" "),cx=430,cy=90;
+ n.forEach((v,i)=>{
+  const angle=-Math.PI/2+2*Math.PI*i/n.length,x=cx+325*Math.cos(angle),y=cy+58*Math.sin(angle);
+  s.append(msShape("line",{x1:cx,y1:cy,x2:x,y2:y,stroke:"#6c7e94","stroke-width":2}));
+  const group=msShape("g",{role:"button",tabindex:0,"aria-label":msRelated(g,v)});
+  group.style.cursor="pointer";
+  group.append(msShape("circle",{cx:x,cy:y,r:23,fill:"#283649",stroke:"#7b90ab"}));
+  group.append(msShape("text",{x,y:y+6,fill:"#eff6ff","font-weight":700,"font-size":16,"text-anchor":"middle"},v));
+  const fn=()=>msSwitch(MODULES.findIndex(a=>a[0]===v));
+  group.addEventListener("click",fn);
+  group.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();fn()}});
+  group.append(msShape("title",{},msRelated(g,v)));
+  s.append(group);
+ });
+ s.append(msShape("circle",{cx,cy,r:32,fill:msModel().color,stroke:"#fff","stroke-width":2}));
+ s.append(msShape("text",{x:cx,y:cy+7,fill:"#0b1420","font-size":22,"font-weight":700,"text-anchor":"middle"},g));
+}
+function msPlot(){
+ const svg=el("msPlot");svg.replaceChildren();
+ const group=msGroup(),model=msModel(),values=msSeries().data;
+ const kind=(group==="J"&&msMode===1)?"bars":model.type;
+ const x=d=>78+d/1095*870, out=(x,y,v,anchor)=>svg.append(msShape("text",{x,y,fill:"#b8c7d8","font-size":12,"text-anchor":anchor||"start"},v));
+ const coords={left:78,right:948,top:42,bottom:285};
+ for(let j=0;j<=4;j++){const yy=coords.top+j*(coords.bottom-coords.top)/4;svg.append(msShape("line",{x1:78,y1:yy,x2:948,y2:yy,stroke:"#38465b"}))}
+ if(kind==="bars"){
+   const hi=Math.log1p(Math.max(...values.map(p=>p[1])));
+   values.forEach((p,i)=>{const y=50+i*63,width=770*Math.log1p(Math.max(0,p[1]))/hi;out(78,y-5,msT().item[group]?.[i]||String(i+1));svg.append(msShape("rect",{x:78,y,width,height:18,rx:5,fill:model.color}));out(85+width,y+14,msFmt(p[1]))});
+ }else{
+   for(const d of [0,180,365,730,900,1095])out(x(d),334,msH(d),"middle");
+   svg.append(msShape("line",{x1:x(msDay),y1:40,x2:x(msDay),y2:300,stroke:"#ffc77d","stroke-dasharray":"5 5"}));
+   if(kind==="line"){
+     const min=Math.min(0,...values.map(p=>p[1])),max=Math.max(...values.map(p=>p[1]),1)*1.09;
+     const yy=v=>285-(v-min)/(max-min)*245;
+     values.forEach((p,i)=>{if(i>0)svg.append(msShape("line",{x1:x(values[i-1][0]),y1:yy(values[i-1][1]),x2:x(p[0]),y2:yy(p[1]),stroke:model.color,"stroke-width":3}))});
+     values.forEach((p,i)=>{const node=msShape("circle",{cx:x(p[0]),cy:yy(p[1]),r:msIndex===i?9:7,fill:model.color,role:"button",tabindex:0});
+       node.style.cursor="pointer";node.append(msShape("title",{},msH(p[0])+" · "+msFmt(p[1])+" "+msSeries().unit));
+       node.addEventListener("click",()=>{msIndex=i;msDay=p[0];msRenderData()});
+       node.addEventListener("keydown",e=>{if(e.key==="Enter"){msIndex=i;msDay=p[0];msRenderData()}});
+       svg.append(node)});
+     for(let i=0;i<=4;i++)out(65,285-245*i/4+4,msFmt(min+(max-min)*i/4),"end");
+   }else{
+     values.forEach((p,i)=>{const yy=57+i*(group==="E"?49:group==="J"?62:group==="H"?80:group==="G"?80:104);svg.append(msShape("line",{x1:78,y1:yy,x2:948,y2:yy,stroke:"#4b5c70"}));
+       const dot=msShape("circle",{cx:x(p[0]),cy:yy,r:8,fill:model.color,role:"button",tabindex:0});dot.style.cursor="pointer";
+       dot.addEventListener("click",()=>{msIndex=i;msDay=p[0];msRenderData()});
+       dot.addEventListener("keydown",e=>{if(e.key==="Enter"){msIndex=i;msDay=p[0];msRenderData()}});
+       dot.append(msShape("title",{},msT().item[group]?.[i]||msH(p[0])));svg.append(dot);
+       out(Math.min(x(p[0])+12,600),yy-10,msH(p[0])+" · "+(msT().item[group]?.[i]||msFmt(p[1])));
+     });
+   }
+ }
+}
+function msRenderData(){
+ const g=msGroup(),model=msModel(),s=msSeries(),t=msT(),kind=(g==="J"&&msMode===1)?"bars":model.type;
+ const modes=el("msModes");modes.replaceChildren();
+ model.series.forEach((a,i)=>{const b=document.createElement("button");b.textContent=t.mode[a.id];b.setAttribute("aria-pressed",String(i===msMode));b.onclick=()=>msChangeMode(i);modes.append(b)});
+ const slider=el("msInput");slider.disabled=kind==="bars";slider.value=msDay;
+ el("msValue").textContent=kind==="bars"?"—":msH(msDay);
+ const sample=s.data.find(p=>Math.abs(p[0]-msDay)<.001);
+ const nearest=s.data.reduce((a,b)=>Math.abs(b[0]-msDay)<Math.abs(a[0]-msDay)?b:a,s.data[0]);
+ const values=[kind==="bars"?(msIndex>=0?msFmt(s.data[msIndex][1]):"—"):sample?msFmt(sample[1])+" "+s.unit:t.nodata,kind==="bars"?"—":msH(nearest[0]),String(s.data.length)];
+ el("msCards").replaceChildren();
+ [t.value,t.nearest,t.points].forEach((title,i)=>{const card=document.createElement("div");card.className="mscard";const sm=document.createElement("small");sm.textContent=title;const strong=document.createElement("strong");strong.textContent=values[i];card.append(sm,strong);el("msCards").append(card)});
+ el("msRecords").replaceChildren();
+ s.data.forEach((p,i)=>{const b=document.createElement("button");const label=t.item[g]?.[i]||msH(p[0]);b.textContent=kind==="bars"?label+" · "+msFmt(p[1]):msH(p[0])+" · "+label+(g==="F"||g==="A"||g==="B"?" · "+msFmt(p[1])+" "+s.unit:"");
+   b.setAttribute("aria-pressed",String(i===msIndex));b.onclick=()=>{msIndex=i;if(kind!=="bars")msDay=p[0];msRenderData()};el("msRecords").append(b)});
+ el("msNote").textContent=t.notes[g]+(kind==="bars"?" "+t.countnote:"");
+ el("msSource").textContent=t.source+"： "+t.sources[g];msPlot();
+}
+function renderModules(){
+ const t=msT(),languages=el("msLanguages");languages.replaceChildren();
+ [["zh","中文"],["en","English"],["ru","Русский"]].forEach(([code,name])=>{const b=document.createElement("button");b.textContent=name;b.setAttribute("aria-pressed",String(code===msLang));b.onclick=()=>msLanguage(code);languages.append(b)});
+ const tabs=el("modules");tabs.replaceChildren();
+ MODULES.forEach((m,i)=>{const b=document.createElement("button");b.setAttribute("aria-pressed",String(i===mod));const s=document.createElement("strong");s.textContent=m[0];const hint=document.createElement("small");hint.textContent=t.groups[i];b.append(s,hint);b.onclick=()=>msSwitch(i);tabs.append(b)});
+ el("moduleDetail").innerHTML='<div class="msheader"><div><h3 id="msHeading"></h3><p id="msDescription"></p></div><span class="pill">A–D03 · H0—H1095</span></div><div id="msRelTitle" class="mssection"></div><svg id="msGraph" class="msnetwork" viewBox="0 0 860 190" role="group" aria-label="Research links"></svg><div id="msLinks" class="mslinks"></div><div id="msVisTitle" class="mssection"></div><div id="msModes" class="nav"></div><div class="msline"><label id="msDate" for="msInput"></label><input type="range" id="msInput" min="0" max="1095" value="365" step="1"><output id="msValue"></output></div><div id="msCards" class="mscards"></div><svg id="msPlot" class="msplot" viewBox="0 0 1000 360" role="img" aria-label="Research chart"></svg><div id="msRecords" class="msrecords"></div><div class="msfoot"><p id="msNote"></p><p id="msSource"></p></div>';
+ el("msHeading").textContent=msGroup()+" / "+t.groups[mod];
+ el("msDescription").textContent=t.titles[mod];el("msRelTitle").textContent=t.connections;
+ el("msVisTitle").textContent=t.visual;el("msDate").textContent=t.date;
+ el("msInput").addEventListener("input",e=>{msDay=Number(e.target.value);msIndex=-1;msRenderData()});
+ MODULES[mod][3].split(" ").forEach(g=>{const b=document.createElement("button");b.textContent=g+" · "+msRelated(msGroup(),g);b.onclick=()=>msSwitch(MODULES.findIndex(m=>m[0]===g));el("msLinks").append(b)});
+ msGraph();msRenderData();
+}
+
+matrix();renderModules();render();
 </script></body></html>
